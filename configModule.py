@@ -23,7 +23,7 @@ class Config:
                                 'license_plate': '',
                                 'password': ''}
         self.parser['server'] = {'sendinterval': '',
-                                'getlocationinterval': ''}
+                                'locationinterval': ''}
         self.parser.write(open('config.ini', 'w'))
 
     def section_returner(self, section):
@@ -37,6 +37,7 @@ class Config:
         if server_API_connection.check_authorization():
             self.parser['server'] = server_API_connection.get_config_from_server()
             self.parser.write(open('config.ini', 'w'))
+
             del(server_API_connection)
         else:
             pass

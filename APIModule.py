@@ -35,7 +35,7 @@ class RequestAPI:
         return check_request.json()['logged']
 
     def get_config_from_server(self):
-        config_from_server = self.session.request("POST", self.base_url + "API/carConfiguration/get")
+        config_from_server = self.session.request("GET", self.base_url + "API/carConfiguration/get/")
         return config_from_server.json()
 
     def logout(self):
