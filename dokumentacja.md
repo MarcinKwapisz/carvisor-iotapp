@@ -17,7 +17,7 @@ ___
     Moduł służący do przygotowania danych do przesłania na serwer
 
 ---
-##Funkcje modułów
+## Funkcje modułów
 ### API
 
     start_session
