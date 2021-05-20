@@ -1,0 +1,30 @@
+2021-05-19 02:05:28 DEBUG  Config file have configured connection with server
+2021-05-19 02:05:57 DEBUG  Config file have configured connection with server
+2021-05-19 02:06:09 DEBUG  Config file have configured connection with server
+2021-05-19 02:06:28 DEBUG  Config file have configured connection with server
+2021-05-19 02:07:37 DEBUG  Config file have configured connection with server
+2021-05-19 11:17:58 DEBUG  Config file have configured connection with server
+2021-05-19 11:17:58 ERROR  [Errno 2] could not open port /dev/pts/1: [Errno 2] No such file or directory: '/dev/pts/1'
+2021-05-19 11:17:58 WARNING Cannot load commands: No connection to car
+2021-05-19 11:17:58 WARNING 'b'010C': Engine RPM' is not supported
+2021-05-19 11:17:58 WARNING 'b'010D': Vehicle Speed' is not supported
+2021-05-19 11:17:58 WARNING 'b'0111': Throttle Position' is not supported
+2021-05-19 11:18:07 DEBUG  Config file have configured connection with server
+2021-05-19 13:04:52 DEBUG  Config file have configured connection with server
+2021-05-19 13:05:26 DEBUG  Config file have configured connection with server
+2021-05-19 13:06:35 DEBUG  Config file have configured connection with server
+2021-05-19 13:07:01 DEBUG  Config file have configured connection with server
+2021-05-19 13:07:23 DEBUG  Config file have configured connection with server
+2021-05-19 13:07:39 DEBUG  Config file have configured connection with server
+2021-05-19 13:32:13 DEBUG  Config file have configured connection with server
+2021-05-19 13:32:44 DEBUG  Config file have configured connection with server
+2021-05-19 13:43:32 DEBUG  Config file have configured connection with server
+2021-05-19 13:44:08 DEBUG  Config file have configured connection with server
+2021-05-19 13:44:25 DEBUG  Config file have configured connection with server
+2021-05-19 13:47:10 DEBUG  Config file have configured connection with server
+2021-05-19 13:47:36 DEBUG  Config file have configured connection with server
+2021-05-19 13:48:45 DEBUG  Config file have configured connection with server
+2021-05-19 13:50:36 DEBUG  Config file have configured connection with server
+2021-05-19 13:51:25 DEBUG  Config file have configured connection with server
+2021-05-19 13:52:09 DEBUG  Config file have configured connection with server
+2021-05-19 16:24:02 DEBUG  Config file have configured connection with server
