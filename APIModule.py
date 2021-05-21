@@ -11,11 +11,13 @@ class RequestAPI:
         # initialize variables with login data from config file
         self.base_url = login_data['base_url']
         self.login_data = json.dumps({"licensePlate": login_data['license_plate'], 'password': login_data['password']})
+        self.login_data_user = json.dumps({"login": login_data['user'], 'password': login_data['password_user']})
         self.session = requests.Session()
         self.start_session()
+        self.start_session_user()
         if self.check_authorization():
             self.get_config_from_server()
-            # self.start_track()
+            self.start_track()
         else:
             logging.warning("Something went wrong with authorization")
 
@@ -33,6 +35,21 @@ class RequestAPI:
                 break
             elif response.status_code == 406:
                 logging.warning("Wrong licence plate or/and password in config file")
+                break
+            else:
+                logging.warning("Server unreachable, error code: " + str(response.status_code))
+
+    def start_session_user(self):
+        # starting new session with server
+        req = requests.Request("POST", self.base_url + "API/authorization/authorize", data=self.login_data_user)
+        ready_request = self.session.prepare_request(req)
+        response = self.session.send(ready_request)
+        for i in range(3):
+            if response.status_code == 200:
+                logging.debug("User logged in")
+                break
+            elif response.status_code == 406:
+                logging.warning("Wrong username or/and password")
                 break
             else:
                 logging.warning("Server unreachable, error code: " + str(response.status_code))
@@ -57,12 +74,12 @@ class RequestAPI:
             logging.warning("Problem occurred when sending obd data to server, error code: " + str(response.status_code))
 
     def start_track(self):
-        start_data = {"time": datetime.datetime.now().timestamp(),"private": False, "gps_longitude":52.45726,"gps_latitude":16.92397}
-        req = requests.Request("POST", self.base_url + "API/track/start/", data=start_data)
+        start_data = json.dumps({"time": datetime.datetime.now().timestamp(),"private": False, "gps_longitude":52.45726,"gps_latitude":16.92397})
+        req = requests.Request("POST", self.base_url + "API/track/start", data=start_data)
         ready_request = self.session.prepare_request(req)
         response = self.session.send(ready_request)
         if response.status_code == 200:
-            logging.debug("Track started")
+            print("Track started")
         else:
             logging.warning("Problem occurred while starting a new track: " + str(response.status_code))
 

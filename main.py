@@ -9,7 +9,7 @@ class CarVisor:
     def __init__(self):
         self.config = Config()
         self.API = self.config.return_API()
-        self.send = Sender(self.config.return_send_interval())
+        self.send = Sender(self.config.return_send_interval(),self.API)
         self.obd = ObdReader(self.send)
         self.start_logging()
         self.start_obd_reading()
@@ -24,8 +24,7 @@ class CarVisor:
 
     def start_obd_reading(self):
         self.obd.start_read()
-        while 1:
-            time.sleep(10)
+        input("Rozpoczęto odczyt OBD.")
 
 
 start = CarVisor()

@@ -3,13 +3,14 @@ import datetime
 
 class Sender:
 
-    def __init__(self, sendinterval):
+    def __init__(self, sendinterval,API):
         self.count_iteration = 0
-        # self.max_iterations = 3
+        self.max_iterations = 3
         self.values = 3
-        self.max_iterations = int(sendinterval)
+        # self.max_iterations = int(sendinterval)
         self.internal_counter = 0
         self.data = {}
+        self.API = API
         self.data[self.count_iteration] = {}
         self.names = {"12": "RPM","13": "Speed","17": "Throttle Pos"}
         self.longitude = 52.45726
@@ -50,7 +51,7 @@ class Sender:
         data_prep = json.dumps(self.data)
         self.data = {}
         self.data[self.count_iteration] = {}
-        # self.API.send_data_to_server(data_prep)
+        self.API.send_data_to_server(data_prep)
         print(data_prep)
 
     def write_manually(self, data_to_write):
