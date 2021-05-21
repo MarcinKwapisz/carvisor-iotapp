@@ -1,3 +1,4 @@
+import datetime
 import logging
 
 import requests
@@ -26,12 +27,16 @@ class RequestAPI:
         req = requests.Request("POST", self.base_url + "API/carAuthorization/authorize", data=self.login_data)
         ready_request = self.session.prepare_request(req)
         response = self.session.send(ready_request)
-        if response.status_code == 200:
-            logging.debug("Device connected to server")
-        else:
-            logging.warning("Server unreachable, error code: " + str(response.status_code))
-            if response.status_code == 406:
+        for i in range(3):
+            if response.status_code == 200:
+                logging.debug("Device connected to server")
+                break
+            elif response.status_code == 406:
                 logging.warning("Wrong licence plate or/and password in config file")
+                break
+            else:
+                logging.warning("Server unreachable, error code: " + str(response.status_code))
+
 
     def check_authorization(self):
         check_request = self.session.request("GET", self.base_url + "API/carAuthorization/status")
@@ -43,7 +48,7 @@ class RequestAPI:
 
     def send_data_to_server(self,obd_data):
         # starting new session with server
-        req = requests.Request("POST", self.base_url + "API/track/updateTrack/", data=obd_data)
+        req = requests.Request("POST", self.base_url + "API/track/updateTrackData/", data=obd_data)
         ready_request = self.session.prepare_request(req)
         response = self.session.send(ready_request)
         if response.status_code == 200:
@@ -52,7 +57,8 @@ class RequestAPI:
             logging.warning("Problem occurred when sending obd data to server, error code: " + str(response.status_code))
 
     def start_track(self):
-        req = requests.Request("POST", self.base_url + "API/track/start/")
+        start_data = {"time": datetime.datetime.now().timestamp(),"private": False, "gps_longitude":52.45726,"gps_latitude":16.92397}
+        req = requests.Request("POST", self.base_url + "API/track/start/", data=start_data)
         ready_request = self.session.prepare_request(req)
         response = self.session.send(ready_request)
         if response.status_code == 200:

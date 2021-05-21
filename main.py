@@ -9,7 +9,6 @@ class CarVisor:
     def __init__(self):
         self.config = Config()
         self.API = self.config.return_API()
-        print(self.API.check_authorization())
         self.send = Sender(self.config.return_send_interval())
         self.obd = ObdReader(self.send)
         self.start_logging()
@@ -20,7 +19,7 @@ class CarVisor:
         logging.basicConfig(filename='carvisor.log',
                          encoding='utf-8',
                           format='%(asctime)s %(levelname)-6s %(message)s',
-                           level=logging.DEBUG,
+                           level=logging.WARNING,
                            datefmt='%Y-%m-%d %H:%M:%S')
 
     def start_obd_reading(self):

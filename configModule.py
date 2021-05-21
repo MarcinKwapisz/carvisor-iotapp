@@ -37,6 +37,7 @@ class Config:
             return False
         else:
             logging.debug('Config file have configured connection with server')
+            return True
 
     def section_returner(self, section):
         # returning a dictionary of requested section
