@@ -2,7 +2,6 @@
 
 ## Moduły:
 
-___
 #### - Main
     Jest to moduł początkowy programu, wywołuje on pozostałe moduły
 #### - API
@@ -16,8 +15,8 @@ ___
 #### - Send
     Moduł służący do przygotowania danych do przesłania na serwer
 
----
 ## Funkcje modułów
+
 ### API
 
     start_session
@@ -59,13 +58,13 @@ ___
 ####
     return_API
     Funkcja zwracająca obiekt API dla pozostałych modułów
-###Main
+### Main
     start_logging
     Funkcja rozpoczynająca logowanie działania aplikacji
 ####
     start_obd_reading
     Funkcja rozpoczynająca odczyt z interfejsu OBD
-###OBD
+### OBD
     logging
     Funkcja określająca wyświetlanie logów OBD o danej ważności
 ####
@@ -77,7 +76,7 @@ ___
 ####
     check_supported_commands
     Funkcja zwracająca liste wspieranych parametrów przez interfejs OBD
-###Send
+### Send
     pack
     Funkcja pakująca dane dostarczone przez moduł OBD
 ####
