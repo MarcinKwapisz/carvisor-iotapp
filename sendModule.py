@@ -1,59 +1,59 @@
 import json
 import datetime
+import re
+
 
 class Sender:
 
-    def __init__(self, sendinterval,API):
+    def __init__(self, sendinterval, API,gps):
         self.count_iteration = 0
         self.max_iterations = 3
         self.values = 3
-        # self.max_iterations = int(sendinterval)
         self.internal_counter = 0
+        # self.max_iterations = int(sendinterval)
         self.data = {}
+        self.gps = gps
         self.API = API
-        self.data[self.count_iteration] = {}
-        self.names = {"12": "RPM","13": "Speed","17": "Throttle Pos"}
-        self.longitude = 52.45726
-        self.latitude = 16.92397
-        self.speedc= 0
-        self.rpmc= 0
+        self.new_iteration()
 
-
-    def pack(self,value,name):
+    def pack(self, value, name):
+        name = str(name)
         try:
-            self.data[self.count_iteration][self.names[str(name)]] = value.value.magnitude
+            # self.check_if_value_exist(name)
+            self.data[self.timestamp]["obd"][name] = float("%.2f" % value.value.magnitude)
         except AttributeError:
-            self.data[self.count_iteration][self.names[str(name)]] = 0
-        if self.names[str(name)] =="Speed":
-            self.speedc+=int(value.value.magnitude)
-        if self.names[str(name)] =="RPM":
-            self.rpmc+=int(value.value.magnitude)
-        if self.internal_counter >=self.values-1:
-            self.gpsdata(self.data[self.count_iteration])
-            self.internal_counter=0
-            self.data[self.count_iteration]['time'] = datetime.datetime.now().timestamp()
-            self.count_iteration+=1
+            # self.check_if_value_exist(name)
+            self.data[self.timestamp]["obd"][name] = 0
+        if self.internal_counter >= self.values - 1:
+            self.data[self.timestamp]["gps_pos"] = self.gps.get_position()
+            self.internal_counter = 0
+            self.count_iteration += 1
             if self.count_iteration == self.max_iterations:
                 self.prepare_to_send()
             else:
-                self.data[self.count_iteration] = {}
+                self.new_iteration()
         else:
-            self.internal_counter+=1
-
-    def gpsdata(self,iteration):
-        #generating fake gps data
-        iteration['gps_longitude'] = ("%.5f" % self.longitude)
-        iteration['gps_latitude'] = ("%.5f" % self.latitude)
-        self.latitude -= 0.00060
+            self.internal_counter += 1
 
     def prepare_to_send(self):
-        self.count_iteration=0
-        data_prep = json.dumps(self.data)
+        # clearing variables for next pack of data and sending collected data to API Module to send to server
+        self.count_iteration = 0
+        data_prep = self.data
         self.data = {}
-        self.data[self.count_iteration] = {}
-        self.API.send_data_to_server(data_prep)
-        print(data_prep)
+        self.new_iteration()
+        self.API.send_obd_data(data_prep)
 
+    def get_new_timestamp(self):
+        # getting new timestamp for naming next iteration of data
+        self.timestamp = datetime.datetime.now().strftime("%s")
+
+    def new_iteration(self):
+        self.get_new_timestamp()
+        self.data[self.timestamp] = {}
+        self.data[self.timestamp]["obd"] = {}
+
+
+    # Functions for testing purposes
     def write_manually(self, data_to_write):
         self.data = data_to_write
 

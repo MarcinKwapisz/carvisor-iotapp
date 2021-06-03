@@ -1,35 +1,43 @@
 import datetime
 import logging
-
+import asyncio
 import requests
 import json
 
-
 class RequestAPI:
 
-    def __init__(self, login_data):
+    def __init__(self, login_data,saver,gps):
         # initialize variables with login data from config file
+        self.gps = gps
         self.base_url = login_data['base_url']
+        self.saver = saver
+        self.connection_retries_number = 3
         self.login_data = json.dumps({"licensePlate": login_data['license_plate'], 'password': login_data['password']})
-        self.login_data_user = json.dumps({"login": login_data['user'], 'password': login_data['password_user']})
+        self.create_own_response()
         self.session = requests.Session()
-        self.start_session()
-        self.start_session_user()
-        if self.check_authorization():
-            self.get_config_from_server()
-            self.start_track()
-        else:
-            logging.warning("Something went wrong with authorization")
+        self.start_session_car()
 
-    def __del__(self):
-        self.logout()
-
-    def start_session(self):
-        # starting new session with server
-        req = requests.Request("POST", self.base_url + "API/carAuthorization/authorize", data=self.login_data)
+    def POST(self,url,data_to_send={}):
+        req = requests.Request("POST", self.base_url + url, data=data_to_send)
         ready_request = self.session.prepare_request(req)
-        response = self.session.send(ready_request)
-        for i in range(3):
+        try:
+            request =  self.session.send(ready_request)
+        except requests.exceptions.RequestException:
+            return self.failure_response
+        return request
+
+    def GET(self,url):
+        try:
+            request = self.session.request("GET", self.base_url + url)
+        except requests.exceptions.RequestException:
+            return self.failure_response
+        return request
+
+
+    def start_session_car(self):
+        # starting new session with server
+        for i in range(self.connection_retries_number):
+            response = self.POST("API/carAuthorization/authorize",self.login_data)
             if response.status_code == 200:
                 logging.debug("Device connected to server")
                 break
@@ -39,50 +47,68 @@ class RequestAPI:
             else:
                 logging.warning("Server unreachable, error code: " + str(response.status_code))
 
-    def start_session_user(self):
-        # starting new session with server
-        req = requests.Request("POST", self.base_url + "API/authorization/authorize", data=self.login_data_user)
-        ready_request = self.session.prepare_request(req)
-        response = self.session.send(ready_request)
-        for i in range(3):
+
+    def send_obd_data(self, obd_data):
+        # self.store_obd_data(obd_data)
+
+        response = self.POST("API/track/updateTrackData/",json.dumps(obd_data))
+        print(datetime.datetime.now())
+        if response.status_code == 200:
+            logging.debug("Sending obd data finished")
+            asyncio.run(self.start_sending_from_db())
+        else:
+            self.store_obd_data(obd_data)
+            logging.warning("Problem occurred when sending obd data to server, error code: " + str(response.status_code))
+
+    def send_saved_data(self, obd_data):
+        response = self.POST("API/track/updateTrackData/",json.dumps(obd_data))
+        if response.status_code == 200:
+            logging.debug("Sending obd data finished")
+            return True
+        else:
+            logging.warning("Problem occurred when sending obd data to server, error code: " + str(response.status_code))
+            return False
+
+    def start_track(self):
+        gps_pos = self.gps.get_only_position_values()
+        start_data = json.dumps({ "nfc_tag":"ABB", "time": datetime.datetime.now().strftime("%s"),"private": False, "gps_longitude":gps_pos[0],"gps_latitude":gps_pos[1]})
+        for i in range(self.connection_retries_number):
+            response = self.POST("API/track/start",start_data)
             if response.status_code == 200:
-                logging.debug("User logged in")
+                logging.debug("Track started")
                 break
-            elif response.status_code == 406:
-                logging.warning("Wrong username or/and password")
+            elif response.status_code == 409:
+                logging.debug("Track exist, working on existing track")
                 break
             else:
-                logging.warning("Server unreachable, error code: " + str(response.status_code))
+                logging.warning("Problem occurred while starting a new track: " + str(response.status_code))
 
 
     def check_authorization(self):
-        check_request = self.session.request("GET", self.base_url + "API/carAuthorization/status")
-        return check_request.json()['logged']
-
-    def get_config_from_server(self):
-        config_from_server = self.session.request("GET", self.base_url + "API/carConfiguration/get/")
-        return config_from_server.json()
-
-    def send_data_to_server(self,obd_data):
-        # starting new session with server
-        req = requests.Request("POST", self.base_url + "API/track/updateTrackData/", data=obd_data)
-        ready_request = self.session.prepare_request(req)
-        response = self.session.send(ready_request)
+        response = self.GET("API/carAuthorization/status")
         if response.status_code == 200:
-            logging.debug("Sending obd data finished")
-        else:
-            logging.warning("Problem occurred when sending obd data to server, error code: " + str(response.status_code))
-
-    def start_track(self):
-        start_data = json.dumps({"time": datetime.datetime.now().timestamp(),"private": False, "gps_longitude":52.45726,"gps_latitude":16.92397})
-        req = requests.Request("POST", self.base_url + "API/track/start", data=start_data)
-        ready_request = self.session.prepare_request(req)
-        response = self.session.send(ready_request)
-        if response.status_code == 200:
-            print("Track started")
+            logging.debug("Track started")
+            return response.json()["logged"]
+        elif response.status_code == 409:
+            logging.debug("Track exist, working on existing track")
+            return False
         else:
             logging.warning("Problem occurred while starting a new track: " + str(response.status_code))
+            return False
 
-    def logout(self):
-        # sending request to server to end a session
-        self.session.request("GET", self.base_url + "API/carAuthorization/logout")
+    def get_config_from_server(self):
+        return self.config
+
+    def store_obd_data(self,data_to_save):
+        self.saver.send_obd_data(data_to_save)
+
+    def create_own_response(self):
+        self.failure_response = requests.models.Response()
+        self.failure_response.code = "expired"
+        self.failure_response.error_type = "expired"
+        self.failure_response.status_code = 400
+
+    async def start_sending_from_db(self):
+        loop = asyncio.get_event_loop()
+        loop.create_task(self.saver.send_payload())
+        loop.close()
