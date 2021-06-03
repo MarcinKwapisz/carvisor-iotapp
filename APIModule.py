@@ -50,18 +50,17 @@ class RequestAPI:
 
     def send_obd_data(self, obd_data):
         # self.store_obd_data(obd_data)
-
         response = self.POST("API/track/updateTrackData/",json.dumps(obd_data))
-        print(datetime.datetime.now())
         if response.status_code == 200:
             logging.debug("Sending obd data finished")
-            asyncio.run(self.start_sending_from_db())
+            self.saver.send_payload()
         else:
             self.store_obd_data(obd_data)
             logging.warning("Problem occurred when sending obd data to server, error code: " + str(response.status_code))
 
     def send_saved_data(self, obd_data):
         response = self.POST("API/track/updateTrackData/",json.dumps(obd_data))
+        print(response.content)
         if response.status_code == 200:
             logging.debug("Sending obd data finished")
             return True
@@ -107,8 +106,3 @@ class RequestAPI:
         self.failure_response.code = "expired"
         self.failure_response.error_type = "expired"
         self.failure_response.status_code = 400
-
-    async def start_sending_from_db(self):
-        loop = asyncio.get_event_loop()
-        loop.create_task(self.saver.send_payload())
-        loop.close()
