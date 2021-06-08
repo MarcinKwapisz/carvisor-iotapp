@@ -3,18 +3,18 @@ import re
 class gps:
 
         def __init__(self):
-                self.prepare_for_fake_gps()
-
-        def prepare_for_fake_gps(self):
                 self.longitude = 16.92397
                 self.latitude = 52.45726
 
         def get_current_position_from_phone(self):
-                location_file = open("location", 'r').readlines()[-3]
-                location_file = location_file.split("│")[1]
-                gps_real = re.findall('[0-9]*[\.]{1}[0-9]*', location_file)
-                return {'longitude': float("%.5f" % float(gps_real[0])),
-                                        "latitude": float("%.5f" % float(gps_real[1]))}
+                try:
+                        location_file = open("location", 'r').readlines()[-3]
+                        location_file = location_file.split("│")[1]
+                        self.longitude, self.latitude = re.findall('[0-9]*[\.]{1}[0-9]*', location_file)
+                except UnicodeDecodeError:
+                        print("ERRROROROROROORORRO")
+                return {'longitude': float("%.5f" % float(self.longitude)),
+                                        "latitude": float("%.5f" % float(self.latitude))}
 
         def get_fake_gps_position(self):
                 position = {'longitude': float("%.5f" % self.longitude),
