@@ -51,11 +51,12 @@ class RequestAPI:
     def send_obd_data(self, obd_data):
         # self.store_obd_data(obd_data)
         response = self.POST("API/track/updateTrackData/",json.dumps(obd_data))
+        self.store_obd_data(obd_data)
         if response.status_code == 200:
             logging.debug("Sending obd data finished")
-            self.saver.send_payload()
+            # self.saver.send_payload()
         else:
-            self.store_obd_data(obd_data)
+            # self.store_obd_data(obd_data)
             logging.warning("Problem occurred when sending obd data to server, error code: " + str(response.status_code))
 
     def send_saved_data(self, obd_data):

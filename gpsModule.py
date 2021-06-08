@@ -10,7 +10,8 @@ class gps:
                 self.latitude = 52.45726
 
         def get_current_position_from_phone(self):
-                location_file = open("location", 'r').readlines()[-2]
+                location_file = open("location", 'r').readlines()[-3]
+                location_file = location_file.split("│")[1]
                 gps_real = re.findall('[0-9]*[\.]{1}[0-9]*', location_file)
                 return {'longitude': float("%.5f" % float(gps_real[0])),
                                         "latitude": float("%.5f" % float(gps_real[1]))}
@@ -22,8 +23,10 @@ class gps:
                 return position
 
         def get_only_position_values(self):
+                self.longitude = float("%.5f" % float(gps_real[0]))
+                self.latitude = float("%.5f" % float(gps_real[1]))
                 return [self.longitude,self.latitude]
 
         def get_position(self):
-                # return self.get_current_position_from_phone()
-                return self.get_fake_gps_position()
+                return self.get_current_position_from_phone()
+                # return self.get_fake_gps_position()
