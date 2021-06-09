@@ -1524,3 +1524,1291 @@
 2021-06-06 19:13:47 DEBUG  Starting new HTTPS connection (4): michal.vps.kronmar.net:443
 2021-06-06 19:13:47 WARNING Problem occurred while starting a new track: 400
 2021-06-06 19:13:47 WARNING Server unreachable, saving data locally
+2021-06-09 13:56:27 DEBUG  Config file have configuration for connection with server
+2021-06-09 13:56:27 DEBUG  Starting new HTTPS connection (1): michal.vps.kronmar.net:443
+2021-06-09 13:56:27 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/carAuthorization/authorize HTTP/1.1" 200 0
+2021-06-09 13:56:27 DEBUG  Device connected to server
+2021-06-09 13:56:27 DEBUG  https://michal.vps.kronmar.net:443 "GET /API/carAuthorization/status HTTP/1.1" 200 40
+2021-06-09 13:56:27 DEBUG  Track started
+2021-06-09 13:57:47 DEBUG  Config file have configuration for connection with server
+2021-06-09 13:57:47 DEBUG  Starting new HTTPS connection (1): michal.vps.kronmar.net:443
+2021-06-09 13:57:47 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/carAuthorization/authorize HTTP/1.1" 200 0
+2021-06-09 13:57:47 DEBUG  Device connected to server
+2021-06-09 13:57:47 DEBUG  https://michal.vps.kronmar.net:443 "GET /API/carAuthorization/status HTTP/1.1" 200 40
+2021-06-09 13:57:47 DEBUG  Track started
+2021-06-09 13:57:48 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/start HTTP/1.1" 200 0
+2021-06-09 13:57:48 DEBUG  Track started
+2021-06-09 13:57:55 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 13:57:55 DEBUG  Sending obd data finished
+2021-06-09 13:57:58 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 13:57:58 DEBUG  Sending obd data finished
+2021-06-09 13:58:02 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 13:58:02 DEBUG  Sending obd data finished
+2021-06-09 13:58:07 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 13:58:07 DEBUG  Sending obd data finished
+2021-06-09 13:58:11 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 13:58:11 DEBUG  Sending obd data finished
+2021-06-09 13:58:15 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 13:58:15 DEBUG  Sending obd data finished
+2021-06-09 13:58:18 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 13:58:18 DEBUG  Sending obd data finished
+2021-06-09 13:58:22 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 13:58:22 DEBUG  Sending obd data finished
+2021-06-09 13:58:26 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 13:58:26 DEBUG  Sending obd data finished
+2021-06-09 13:58:30 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 13:58:30 DEBUG  Sending obd data finished
+2021-06-09 13:59:59 DEBUG  Config file have configuration for connection with server
+2021-06-09 13:59:59 DEBUG  Starting new HTTPS connection (1): michal.vps.kronmar.net:443
+2021-06-09 14:00:01 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/carAuthorization/authorize HTTP/1.1" 200 0
+2021-06-09 14:00:01 DEBUG  Device connected to server
+2021-06-09 14:00:01 DEBUG  https://michal.vps.kronmar.net:443 "GET /API/carAuthorization/status HTTP/1.1" 200 40
+2021-06-09 14:00:01 DEBUG  Track started
+2021-06-09 14:00:02 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/start HTTP/1.1" 200 0
+2021-06-09 14:00:02 DEBUG  Track started
+2021-06-09 14:00:10 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:00:10 DEBUG  Sending obd data finished
+2021-06-09 14:00:13 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:00:13 DEBUG  Sending obd data finished
+2021-06-09 14:00:18 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:00:18 DEBUG  Sending obd data finished
+2021-06-09 14:00:22 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:00:22 DEBUG  Sending obd data finished
+2021-06-09 14:00:26 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:00:26 DEBUG  Sending obd data finished
+2021-06-09 14:00:30 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:00:30 DEBUG  Sending obd data finished
+2021-06-09 14:00:34 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:00:34 DEBUG  Sending obd data finished
+2021-06-09 14:00:37 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:00:37 DEBUG  Sending obd data finished
+2021-06-09 14:00:42 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:00:42 DEBUG  Sending obd data finished
+2021-06-09 14:00:46 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:00:46 DEBUG  Sending obd data finished
+2021-06-09 14:00:51 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:00:51 DEBUG  Sending obd data finished
+2021-06-09 14:00:54 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:00:54 DEBUG  Sending obd data finished
+2021-06-09 14:00:59 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:00:59 DEBUG  Sending obd data finished
+2021-06-09 14:01:02 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:01:02 DEBUG  Sending obd data finished
+2021-06-09 14:01:05 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:01:05 DEBUG  Sending obd data finished
+2021-06-09 14:01:09 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:01:09 DEBUG  Sending obd data finished
+2021-06-09 14:01:14 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:01:14 DEBUG  Sending obd data finished
+2021-06-09 14:01:18 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:01:18 DEBUG  Sending obd data finished
+2021-06-09 14:01:22 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:01:22 DEBUG  Sending obd data finished
+2021-06-09 14:01:26 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:01:26 DEBUG  Sending obd data finished
+2021-06-09 14:01:31 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:01:31 DEBUG  Sending obd data finished
+2021-06-09 14:01:35 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:01:35 DEBUG  Sending obd data finished
+2021-06-09 14:01:38 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:01:38 DEBUG  Sending obd data finished
+2021-06-09 14:01:42 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:01:42 DEBUG  Sending obd data finished
+2021-06-09 14:01:46 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:01:46 DEBUG  Sending obd data finished
+2021-06-09 14:01:49 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:01:49 DEBUG  Sending obd data finished
+2021-06-09 14:01:53 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:01:53 DEBUG  Sending obd data finished
+2021-06-09 14:01:57 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:01:57 DEBUG  Sending obd data finished
+2021-06-09 14:02:00 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:02:00 DEBUG  Sending obd data finished
+2021-06-09 14:02:04 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:02:04 DEBUG  Sending obd data finished
+2021-06-09 14:02:08 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:02:08 DEBUG  Sending obd data finished
+2021-06-09 14:02:12 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:02:12 DEBUG  Sending obd data finished
+2021-06-09 14:02:16 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:02:16 DEBUG  Sending obd data finished
+2021-06-09 14:02:20 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:02:20 DEBUG  Sending obd data finished
+2021-06-09 14:02:25 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:02:25 DEBUG  Sending obd data finished
+2021-06-09 14:02:28 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:02:28 DEBUG  Sending obd data finished
+2021-06-09 14:02:32 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:02:32 DEBUG  Sending obd data finished
+2021-06-09 14:02:36 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:02:36 DEBUG  Sending obd data finished
+2021-06-09 14:02:39 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:02:39 DEBUG  Sending obd data finished
+2021-06-09 14:02:43 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:02:43 DEBUG  Sending obd data finished
+2021-06-09 14:02:46 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:02:46 DEBUG  Sending obd data finished
+2021-06-09 14:02:49 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:02:49 DEBUG  Sending obd data finished
+2021-06-09 14:02:53 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:02:53 DEBUG  Sending obd data finished
+2021-06-09 14:02:56 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:02:56 DEBUG  Sending obd data finished
+2021-06-09 14:02:59 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:02:59 DEBUG  Sending obd data finished
+2021-06-09 14:03:03 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:03:03 DEBUG  Sending obd data finished
+2021-06-09 14:03:07 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:03:07 DEBUG  Sending obd data finished
+2021-06-09 14:03:11 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:03:11 DEBUG  Sending obd data finished
+2021-06-09 14:03:14 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:03:14 DEBUG  Sending obd data finished
+2021-06-09 14:03:17 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:03:17 DEBUG  Sending obd data finished
+2021-06-09 14:03:21 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:03:21 DEBUG  Sending obd data finished
+2021-06-09 14:03:24 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:03:24 DEBUG  Sending obd data finished
+2021-06-09 14:03:28 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:03:28 DEBUG  Sending obd data finished
+2021-06-09 14:03:31 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:03:31 DEBUG  Sending obd data finished
+2021-06-09 14:03:35 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:03:35 DEBUG  Sending obd data finished
+2021-06-09 14:03:39 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:03:39 DEBUG  Sending obd data finished
+2021-06-09 14:03:43 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:03:43 DEBUG  Sending obd data finished
+2021-06-09 14:03:46 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:03:46 DEBUG  Sending obd data finished
+2021-06-09 14:03:50 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:03:50 DEBUG  Sending obd data finished
+2021-06-09 14:03:54 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:03:54 DEBUG  Sending obd data finished
+2021-06-09 14:03:57 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:03:57 DEBUG  Sending obd data finished
+2021-06-09 14:04:00 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:04:00 DEBUG  Sending obd data finished
+2021-06-09 14:04:04 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:04:04 DEBUG  Sending obd data finished
+2021-06-09 14:04:07 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:04:07 DEBUG  Sending obd data finished
+2021-06-09 14:04:11 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:04:11 DEBUG  Sending obd data finished
+2021-06-09 14:04:14 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:04:14 DEBUG  Sending obd data finished
+2021-06-09 14:04:18 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:04:18 DEBUG  Sending obd data finished
+2021-06-09 14:04:21 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:04:21 DEBUG  Sending obd data finished
+2021-06-09 14:04:25 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:04:25 DEBUG  Sending obd data finished
+2021-06-09 14:04:28 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:04:28 DEBUG  Sending obd data finished
+2021-06-09 14:04:32 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:04:32 DEBUG  Sending obd data finished
+2021-06-09 14:04:35 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:04:35 DEBUG  Sending obd data finished
+2021-06-09 14:04:39 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:04:39 DEBUG  Sending obd data finished
+2021-06-09 14:04:42 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:04:42 DEBUG  Sending obd data finished
+2021-06-09 14:04:46 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:04:46 DEBUG  Sending obd data finished
+2021-06-09 14:04:50 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:04:50 DEBUG  Sending obd data finished
+2021-06-09 14:04:54 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:04:54 DEBUG  Sending obd data finished
+2021-06-09 14:04:57 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:04:57 DEBUG  Sending obd data finished
+2021-06-09 14:05:00 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:05:00 DEBUG  Sending obd data finished
+2021-06-09 14:05:04 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:05:04 DEBUG  Sending obd data finished
+2021-06-09 14:05:07 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:05:07 DEBUG  Sending obd data finished
+2021-06-09 14:05:11 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:05:11 DEBUG  Sending obd data finished
+2021-06-09 14:05:14 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:05:14 DEBUG  Sending obd data finished
+2021-06-09 14:05:18 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:05:18 DEBUG  Sending obd data finished
+2021-06-09 14:05:22 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:05:22 DEBUG  Sending obd data finished
+2021-06-09 14:05:26 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:05:26 DEBUG  Sending obd data finished
+2021-06-09 14:05:30 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:05:30 DEBUG  Sending obd data finished
+2021-06-09 14:05:33 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:05:33 DEBUG  Sending obd data finished
+2021-06-09 14:05:37 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:05:37 DEBUG  Sending obd data finished
+2021-06-09 14:05:40 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:05:40 DEBUG  Sending obd data finished
+2021-06-09 14:05:44 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:05:44 DEBUG  Sending obd data finished
+2021-06-09 14:05:47 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:05:47 DEBUG  Sending obd data finished
+2021-06-09 14:05:51 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:05:51 DEBUG  Sending obd data finished
+2021-06-09 14:05:54 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:05:54 DEBUG  Sending obd data finished
+2021-06-09 14:05:58 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:05:58 DEBUG  Sending obd data finished
+2021-06-09 14:06:02 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:06:02 DEBUG  Sending obd data finished
+2021-06-09 14:06:06 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:06:06 DEBUG  Sending obd data finished
+2021-06-09 14:06:09 DEBUG  Resetting dropped connection: michal.vps.kronmar.net
+2021-06-09 14:06:10 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:06:10 DEBUG  Sending obd data finished
+2021-06-09 14:06:13 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:06:13 DEBUG  Sending obd data finished
+2021-06-09 14:06:17 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:06:17 DEBUG  Sending obd data finished
+2021-06-09 14:06:20 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:06:20 DEBUG  Sending obd data finished
+2021-06-09 14:06:24 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:06:24 DEBUG  Sending obd data finished
+2021-06-09 14:06:27 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:06:27 DEBUG  Sending obd data finished
+2021-06-09 14:06:31 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:06:31 DEBUG  Sending obd data finished
+2021-06-09 14:06:35 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:06:35 DEBUG  Sending obd data finished
+2021-06-09 14:06:38 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:06:38 DEBUG  Sending obd data finished
+2021-06-09 14:06:41 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:06:41 DEBUG  Sending obd data finished
+2021-06-09 14:06:46 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:06:46 DEBUG  Sending obd data finished
+2021-06-09 14:06:50 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:06:50 DEBUG  Sending obd data finished
+2021-06-09 14:06:53 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:06:53 DEBUG  Sending obd data finished
+2021-06-09 14:06:57 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:06:57 DEBUG  Sending obd data finished
+2021-06-09 14:07:00 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:07:00 DEBUG  Sending obd data finished
+2021-06-09 14:07:04 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:07:04 DEBUG  Sending obd data finished
+2021-06-09 14:07:08 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:07:08 DEBUG  Sending obd data finished
+2021-06-09 14:07:11 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:07:11 DEBUG  Sending obd data finished
+2021-06-09 14:07:14 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:07:14 DEBUG  Sending obd data finished
+2021-06-09 14:07:18 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:07:18 DEBUG  Sending obd data finished
+2021-06-09 14:07:21 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:07:21 DEBUG  Sending obd data finished
+2021-06-09 14:07:25 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:07:25 DEBUG  Sending obd data finished
+2021-06-09 14:07:28 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:07:28 DEBUG  Sending obd data finished
+2021-06-09 14:07:32 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:07:32 DEBUG  Sending obd data finished
+2021-06-09 14:07:35 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:07:35 DEBUG  Sending obd data finished
+2021-06-09 14:07:39 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:07:39 DEBUG  Sending obd data finished
+2021-06-09 14:07:43 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:07:43 DEBUG  Sending obd data finished
+2021-06-09 14:07:46 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:07:46 DEBUG  Sending obd data finished
+2021-06-09 14:07:49 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:07:49 DEBUG  Sending obd data finished
+2021-06-09 14:07:53 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:07:53 DEBUG  Sending obd data finished
+2021-06-09 14:07:57 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:07:57 DEBUG  Sending obd data finished
+2021-06-09 14:08:00 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:08:00 DEBUG  Sending obd data finished
+2021-06-09 14:08:04 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:08:04 DEBUG  Sending obd data finished
+2021-06-09 14:08:08 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:08:08 DEBUG  Sending obd data finished
+2021-06-09 14:08:12 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:08:12 DEBUG  Sending obd data finished
+2021-06-09 14:08:15 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:08:15 DEBUG  Sending obd data finished
+2021-06-09 14:08:19 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:08:19 DEBUG  Sending obd data finished
+2021-06-09 14:08:23 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:08:23 DEBUG  Sending obd data finished
+2021-06-09 14:08:26 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:08:26 DEBUG  Sending obd data finished
+2021-06-09 14:08:29 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:08:29 DEBUG  Sending obd data finished
+2021-06-09 14:08:36 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:08:36 DEBUG  Sending obd data finished
+2021-06-09 14:08:43 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:08:43 DEBUG  Sending obd data finished
+2021-06-09 14:08:48 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:08:48 DEBUG  Sending obd data finished
+2021-06-09 14:08:51 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:08:51 DEBUG  Sending obd data finished
+2021-06-09 14:08:56 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:08:56 DEBUG  Sending obd data finished
+2021-06-09 14:08:59 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:08:59 DEBUG  Sending obd data finished
+2021-06-09 14:09:03 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:09:03 DEBUG  Sending obd data finished
+2021-06-09 14:09:07 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:09:07 DEBUG  Sending obd data finished
+2021-06-09 14:09:11 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:09:11 DEBUG  Sending obd data finished
+2021-06-09 14:09:15 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:09:15 DEBUG  Sending obd data finished
+2021-06-09 14:09:19 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:09:19 DEBUG  Sending obd data finished
+2021-06-09 14:09:23 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:09:23 DEBUG  Sending obd data finished
+2021-06-09 14:09:26 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:09:26 DEBUG  Sending obd data finished
+2021-06-09 14:09:30 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:09:30 DEBUG  Sending obd data finished
+2021-06-09 14:09:33 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:09:33 DEBUG  Sending obd data finished
+2021-06-09 14:09:37 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:09:37 DEBUG  Sending obd data finished
+2021-06-09 14:09:40 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:09:40 DEBUG  Sending obd data finished
+2021-06-09 14:09:44 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:09:44 DEBUG  Sending obd data finished
+2021-06-09 14:09:47 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:09:47 DEBUG  Sending obd data finished
+2021-06-09 14:09:50 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:09:50 DEBUG  Sending obd data finished
+2021-06-09 14:09:54 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:09:54 DEBUG  Sending obd data finished
+2021-06-09 14:09:57 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:09:57 DEBUG  Sending obd data finished
+2021-06-09 14:10:01 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:10:01 DEBUG  Sending obd data finished
+2021-06-09 14:10:05 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:10:05 DEBUG  Sending obd data finished
+2021-06-09 14:10:08 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:10:08 DEBUG  Sending obd data finished
+2021-06-09 14:10:12 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:10:12 DEBUG  Sending obd data finished
+2021-06-09 14:10:15 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:10:15 DEBUG  Sending obd data finished
+2021-06-09 14:10:19 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:10:19 DEBUG  Sending obd data finished
+2021-06-09 14:10:23 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:10:23 DEBUG  Sending obd data finished
+2021-06-09 14:10:26 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:10:26 DEBUG  Sending obd data finished
+2021-06-09 14:10:29 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:10:29 DEBUG  Sending obd data finished
+2021-06-09 14:10:33 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:10:33 DEBUG  Sending obd data finished
+2021-06-09 14:10:37 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:10:37 DEBUG  Sending obd data finished
+2021-06-09 14:10:40 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:10:40 DEBUG  Sending obd data finished
+2021-06-09 14:10:44 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:10:44 DEBUG  Sending obd data finished
+2021-06-09 14:10:48 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:10:48 DEBUG  Sending obd data finished
+2021-06-09 14:10:52 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:10:52 DEBUG  Sending obd data finished
+2021-06-09 14:10:55 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:10:55 DEBUG  Sending obd data finished
+2021-06-09 14:10:59 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:10:59 DEBUG  Sending obd data finished
+2021-06-09 14:11:02 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:11:02 DEBUG  Sending obd data finished
+2021-06-09 14:11:06 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:11:06 DEBUG  Sending obd data finished
+2021-06-09 14:11:09 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:11:09 DEBUG  Sending obd data finished
+2021-06-09 14:11:13 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:11:13 DEBUG  Sending obd data finished
+2021-06-09 14:11:17 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:11:17 DEBUG  Sending obd data finished
+2021-06-09 14:11:20 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:11:20 DEBUG  Sending obd data finished
+2021-06-09 14:11:23 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:11:23 DEBUG  Sending obd data finished
+2021-06-09 14:11:27 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:11:27 DEBUG  Sending obd data finished
+2021-06-09 14:11:30 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:11:30 DEBUG  Sending obd data finished
+2021-06-09 14:11:34 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:11:34 DEBUG  Sending obd data finished
+2021-06-09 14:11:38 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:11:38 DEBUG  Sending obd data finished
+2021-06-09 14:11:41 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:11:41 DEBUG  Sending obd data finished
+2021-06-09 14:11:44 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:11:44 DEBUG  Sending obd data finished
+2021-06-09 14:11:48 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:11:48 DEBUG  Sending obd data finished
+2021-06-09 14:11:52 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:11:52 DEBUG  Sending obd data finished
+2021-06-09 14:11:55 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:11:55 DEBUG  Sending obd data finished
+2021-06-09 14:11:58 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:11:58 DEBUG  Sending obd data finished
+2021-06-09 14:12:02 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:12:02 DEBUG  Sending obd data finished
+2021-06-09 14:12:06 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:12:06 DEBUG  Sending obd data finished
+2021-06-09 14:12:09 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:12:09 DEBUG  Sending obd data finished
+2021-06-09 14:12:12 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:12:12 DEBUG  Sending obd data finished
+2021-06-09 14:12:15 DEBUG  Resetting dropped connection: michal.vps.kronmar.net
+2021-06-09 14:12:17 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:12:17 DEBUG  Sending obd data finished
+2021-06-09 14:12:20 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:12:20 DEBUG  Sending obd data finished
+2021-06-09 14:12:24 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:12:24 DEBUG  Sending obd data finished
+2021-06-09 14:12:28 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:12:28 DEBUG  Sending obd data finished
+2021-06-09 14:12:31 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:12:31 DEBUG  Sending obd data finished
+2021-06-09 14:12:35 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:12:35 DEBUG  Sending obd data finished
+2021-06-09 14:12:38 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:12:38 DEBUG  Sending obd data finished
+2021-06-09 14:12:42 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:12:42 DEBUG  Sending obd data finished
+2021-06-09 14:12:46 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:12:46 DEBUG  Sending obd data finished
+2021-06-09 14:12:50 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:12:50 DEBUG  Sending obd data finished
+2021-06-09 14:12:53 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:12:53 DEBUG  Sending obd data finished
+2021-06-09 14:12:58 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:12:58 DEBUG  Sending obd data finished
+2021-06-09 14:13:01 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:13:01 DEBUG  Sending obd data finished
+2021-06-09 14:13:05 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:13:05 DEBUG  Sending obd data finished
+2021-06-09 14:13:08 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:13:08 DEBUG  Sending obd data finished
+2021-06-09 14:13:12 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:13:12 DEBUG  Sending obd data finished
+2021-06-09 14:13:15 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:13:15 DEBUG  Sending obd data finished
+2021-06-09 14:13:18 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:13:18 DEBUG  Sending obd data finished
+2021-06-09 14:13:22 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:13:22 DEBUG  Sending obd data finished
+2021-06-09 14:13:25 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:13:25 DEBUG  Sending obd data finished
+2021-06-09 14:13:29 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:13:29 DEBUG  Sending obd data finished
+2021-06-09 14:13:33 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:13:33 DEBUG  Sending obd data finished
+2021-06-09 14:13:36 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:13:36 DEBUG  Sending obd data finished
+2021-06-09 14:13:40 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:13:40 DEBUG  Sending obd data finished
+2021-06-09 14:13:44 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:13:44 DEBUG  Sending obd data finished
+2021-06-09 14:13:47 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:13:47 DEBUG  Sending obd data finished
+2021-06-09 14:13:51 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:13:51 DEBUG  Sending obd data finished
+2021-06-09 14:13:54 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:13:54 DEBUG  Sending obd data finished
+2021-06-09 14:13:57 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:13:57 DEBUG  Sending obd data finished
+2021-06-09 14:14:01 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:14:01 DEBUG  Sending obd data finished
+2021-06-09 14:14:05 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:14:05 DEBUG  Sending obd data finished
+2021-06-09 14:14:08 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:14:08 DEBUG  Sending obd data finished
+2021-06-09 14:14:11 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:14:11 DEBUG  Sending obd data finished
+2021-06-09 14:14:15 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:14:15 DEBUG  Sending obd data finished
+2021-06-09 14:14:18 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:14:18 DEBUG  Sending obd data finished
+2021-06-09 14:14:22 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:14:22 DEBUG  Sending obd data finished
+2021-06-09 14:14:25 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:14:25 DEBUG  Sending obd data finished
+2021-06-09 14:14:29 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:14:29 DEBUG  Sending obd data finished
+2021-06-09 14:14:34 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:14:34 DEBUG  Sending obd data finished
+2021-06-09 14:14:37 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:14:37 DEBUG  Sending obd data finished
+2021-06-09 14:14:41 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:14:41 DEBUG  Sending obd data finished
+2021-06-09 14:14:44 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:14:44 DEBUG  Sending obd data finished
+2021-06-09 14:14:48 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:14:48 DEBUG  Sending obd data finished
+2021-06-09 14:14:52 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:14:52 DEBUG  Sending obd data finished
+2021-06-09 14:14:55 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:14:55 DEBUG  Sending obd data finished
+2021-06-09 14:14:58 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:14:58 DEBUG  Sending obd data finished
+2021-06-09 14:15:02 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:15:02 DEBUG  Sending obd data finished
+2021-06-09 14:15:05 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:15:05 DEBUG  Sending obd data finished
+2021-06-09 14:15:09 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:15:09 DEBUG  Sending obd data finished
+2021-06-09 14:15:13 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:15:13 DEBUG  Sending obd data finished
+2021-06-09 14:15:16 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:15:16 DEBUG  Sending obd data finished
+2021-06-09 14:15:20 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:15:20 DEBUG  Sending obd data finished
+2021-06-09 14:15:23 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:15:23 DEBUG  Sending obd data finished
+2021-06-09 14:15:27 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:15:27 DEBUG  Sending obd data finished
+2021-06-09 14:15:30 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:15:30 DEBUG  Sending obd data finished
+2021-06-09 14:15:34 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:15:34 DEBUG  Sending obd data finished
+2021-06-09 14:15:37 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:15:37 DEBUG  Sending obd data finished
+2021-06-09 14:15:41 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:15:41 DEBUG  Sending obd data finished
+2021-06-09 14:15:44 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:15:44 DEBUG  Sending obd data finished
+2021-06-09 14:15:48 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:15:48 DEBUG  Sending obd data finished
+2021-06-09 14:15:51 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:15:51 DEBUG  Sending obd data finished
+2021-06-09 14:15:55 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:15:55 DEBUG  Sending obd data finished
+2021-06-09 14:15:58 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:15:58 DEBUG  Sending obd data finished
+2021-06-09 14:16:02 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:16:02 DEBUG  Sending obd data finished
+2021-06-09 14:16:06 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:16:06 DEBUG  Sending obd data finished
+2021-06-09 14:16:09 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:16:09 DEBUG  Sending obd data finished
+2021-06-09 14:16:13 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:16:13 DEBUG  Sending obd data finished
+2021-06-09 14:16:16 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:16:16 DEBUG  Sending obd data finished
+2021-06-09 14:16:20 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:16:20 DEBUG  Sending obd data finished
+2021-06-09 14:16:23 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:16:23 DEBUG  Sending obd data finished
+2021-06-09 14:16:27 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:16:27 DEBUG  Sending obd data finished
+2021-06-09 14:16:31 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:16:31 DEBUG  Sending obd data finished
+2021-06-09 14:16:35 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:16:35 DEBUG  Sending obd data finished
+2021-06-09 14:16:38 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:16:38 DEBUG  Sending obd data finished
+2021-06-09 14:16:41 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:16:41 DEBUG  Sending obd data finished
+2021-06-09 14:16:45 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:16:45 DEBUG  Sending obd data finished
+2021-06-09 14:16:48 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:16:48 DEBUG  Sending obd data finished
+2021-06-09 14:16:52 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:16:52 DEBUG  Sending obd data finished
+2021-06-09 14:16:56 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:16:56 DEBUG  Sending obd data finished
+2021-06-09 14:16:59 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:16:59 DEBUG  Sending obd data finished
+2021-06-09 14:17:03 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:17:03 DEBUG  Sending obd data finished
+2021-06-09 14:17:07 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:17:07 DEBUG  Sending obd data finished
+2021-06-09 14:17:10 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:17:10 DEBUG  Sending obd data finished
+2021-06-09 14:17:14 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:17:14 DEBUG  Sending obd data finished
+2021-06-09 14:17:17 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:17:17 DEBUG  Sending obd data finished
+2021-06-09 14:17:21 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:17:21 DEBUG  Sending obd data finished
+2021-06-09 14:17:25 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:17:25 DEBUG  Sending obd data finished
+2021-06-09 14:17:28 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:17:28 DEBUG  Sending obd data finished
+2021-06-09 14:17:32 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:17:32 DEBUG  Sending obd data finished
+2021-06-09 14:17:35 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:17:35 DEBUG  Sending obd data finished
+2021-06-09 14:17:40 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:17:40 DEBUG  Sending obd data finished
+2021-06-09 14:17:43 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:17:43 DEBUG  Sending obd data finished
+2021-06-09 14:17:48 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:17:48 DEBUG  Sending obd data finished
+2021-06-09 14:17:51 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:17:51 DEBUG  Sending obd data finished
+2021-06-09 14:17:55 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:17:55 DEBUG  Sending obd data finished
+2021-06-09 14:17:58 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:17:58 DEBUG  Sending obd data finished
+2021-06-09 14:18:02 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:18:02 DEBUG  Sending obd data finished
+2021-06-09 14:18:05 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:18:05 DEBUG  Sending obd data finished
+2021-06-09 14:18:09 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:18:09 DEBUG  Sending obd data finished
+2021-06-09 14:18:13 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:18:13 DEBUG  Sending obd data finished
+2021-06-09 14:18:16 DEBUG  Resetting dropped connection: michal.vps.kronmar.net
+2021-06-09 14:18:19 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:18:19 DEBUG  Sending obd data finished
+2021-06-09 14:18:22 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:18:22 DEBUG  Sending obd data finished
+2021-06-09 14:18:26 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:18:26 DEBUG  Sending obd data finished
+2021-06-09 14:18:29 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:18:29 DEBUG  Sending obd data finished
+2021-06-09 14:18:33 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:18:33 DEBUG  Sending obd data finished
+2021-06-09 14:18:36 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:18:36 DEBUG  Sending obd data finished
+2021-06-09 14:18:39 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:18:39 DEBUG  Sending obd data finished
+2021-06-09 14:18:43 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:18:43 DEBUG  Sending obd data finished
+2021-06-09 14:18:46 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:18:46 DEBUG  Sending obd data finished
+2021-06-09 14:18:49 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:18:49 DEBUG  Sending obd data finished
+2021-06-09 14:18:53 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:18:53 DEBUG  Sending obd data finished
+2021-06-09 14:18:56 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:18:57 DEBUG  Sending obd data finished
+2021-06-09 14:19:00 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:19:00 DEBUG  Sending obd data finished
+2021-06-09 14:19:04 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:19:04 DEBUG  Sending obd data finished
+2021-06-09 14:19:07 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:19:07 DEBUG  Sending obd data finished
+2021-06-09 14:19:11 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:19:11 DEBUG  Sending obd data finished
+2021-06-09 14:19:14 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:19:14 DEBUG  Sending obd data finished
+2021-06-09 14:19:18 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:19:18 DEBUG  Sending obd data finished
+2021-06-09 14:19:21 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:19:21 DEBUG  Sending obd data finished
+2021-06-09 14:19:25 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:19:25 DEBUG  Sending obd data finished
+2021-06-09 14:19:29 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:19:29 DEBUG  Sending obd data finished
+2021-06-09 14:19:33 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:19:33 DEBUG  Sending obd data finished
+2021-06-09 14:19:37 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:19:37 DEBUG  Sending obd data finished
+2021-06-09 14:19:41 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:19:41 DEBUG  Sending obd data finished
+2021-06-09 14:19:45 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:19:45 DEBUG  Sending obd data finished
+2021-06-09 14:19:49 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:19:49 DEBUG  Sending obd data finished
+2021-06-09 14:19:52 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:19:52 DEBUG  Sending obd data finished
+2021-06-09 14:19:56 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:19:56 DEBUG  Sending obd data finished
+2021-06-09 14:19:59 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:19:59 DEBUG  Sending obd data finished
+2021-06-09 14:20:03 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:20:03 DEBUG  Sending obd data finished
+2021-06-09 14:20:07 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:20:07 DEBUG  Sending obd data finished
+2021-06-09 14:20:11 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:20:11 DEBUG  Sending obd data finished
+2021-06-09 14:20:15 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:20:15 DEBUG  Sending obd data finished
+2021-06-09 14:20:19 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:20:19 DEBUG  Sending obd data finished
+2021-06-09 14:20:22 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:20:22 DEBUG  Sending obd data finished
+2021-06-09 14:20:26 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:20:26 DEBUG  Sending obd data finished
+2021-06-09 14:20:29 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:20:29 DEBUG  Sending obd data finished
+2021-06-09 14:20:33 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:20:33 DEBUG  Sending obd data finished
+2021-06-09 14:20:36 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:20:36 DEBUG  Sending obd data finished
+2021-06-09 14:20:40 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:20:40 DEBUG  Sending obd data finished
+2021-06-09 14:20:43 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:20:43 DEBUG  Sending obd data finished
+2021-06-09 14:20:47 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:20:47 DEBUG  Sending obd data finished
+2021-06-09 14:20:50 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:20:50 DEBUG  Sending obd data finished
+2021-06-09 14:20:54 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:20:54 DEBUG  Sending obd data finished
+2021-06-09 14:20:57 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:20:57 DEBUG  Sending obd data finished
+2021-06-09 14:21:02 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:21:02 DEBUG  Sending obd data finished
+2021-06-09 14:21:06 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:21:06 DEBUG  Sending obd data finished
+2021-06-09 14:21:09 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:21:09 DEBUG  Sending obd data finished
+2021-06-09 14:21:13 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:21:13 DEBUG  Sending obd data finished
+2021-06-09 14:21:17 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:21:17 DEBUG  Sending obd data finished
+2021-06-09 14:21:20 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:21:20 DEBUG  Sending obd data finished
+2021-06-09 14:21:24 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:21:24 DEBUG  Sending obd data finished
+2021-06-09 14:21:27 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:21:27 DEBUG  Sending obd data finished
+2021-06-09 14:21:32 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:21:32 DEBUG  Sending obd data finished
+2021-06-09 14:21:36 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:21:36 DEBUG  Sending obd data finished
+2021-06-09 14:21:40 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:21:40 DEBUG  Sending obd data finished
+2021-06-09 14:21:43 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:21:43 DEBUG  Sending obd data finished
+2021-06-09 14:21:47 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:21:47 DEBUG  Sending obd data finished
+2021-06-09 14:21:50 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:21:50 DEBUG  Sending obd data finished
+2021-06-09 14:21:54 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:21:54 DEBUG  Sending obd data finished
+2021-06-09 14:21:58 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:21:58 DEBUG  Sending obd data finished
+2021-06-09 14:22:02 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:22:02 DEBUG  Sending obd data finished
+2021-06-09 14:22:06 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:22:06 DEBUG  Sending obd data finished
+2021-06-09 14:22:09 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:22:09 DEBUG  Sending obd data finished
+2021-06-09 14:22:12 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:22:12 DEBUG  Sending obd data finished
+2021-06-09 14:22:16 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:22:16 DEBUG  Sending obd data finished
+2021-06-09 14:22:19 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:22:19 DEBUG  Sending obd data finished
+2021-06-09 14:22:23 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:22:23 DEBUG  Sending obd data finished
+2021-06-09 14:22:27 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:22:27 DEBUG  Sending obd data finished
+2021-06-09 14:22:30 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:22:30 DEBUG  Sending obd data finished
+2021-06-09 14:22:35 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:22:35 DEBUG  Sending obd data finished
+2021-06-09 14:22:39 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:22:39 DEBUG  Sending obd data finished
+2021-06-09 14:22:42 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:22:42 DEBUG  Sending obd data finished
+2021-06-09 14:22:47 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:22:47 DEBUG  Sending obd data finished
+2021-06-09 14:22:50 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:22:50 DEBUG  Sending obd data finished
+2021-06-09 14:22:54 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:22:54 DEBUG  Sending obd data finished
+2021-06-09 14:22:58 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:22:58 DEBUG  Sending obd data finished
+2021-06-09 14:23:01 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:23:01 DEBUG  Sending obd data finished
+2021-06-09 14:23:05 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:23:05 DEBUG  Sending obd data finished
+2021-06-09 14:23:08 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:23:08 DEBUG  Sending obd data finished
+2021-06-09 14:23:12 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:23:12 DEBUG  Sending obd data finished
+2021-06-09 14:23:15 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:23:15 DEBUG  Sending obd data finished
+2021-06-09 14:23:19 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:23:19 DEBUG  Sending obd data finished
+2021-06-09 14:23:22 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:23:22 DEBUG  Sending obd data finished
+2021-06-09 14:23:26 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:23:26 DEBUG  Sending obd data finished
+2021-06-09 14:23:30 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:23:30 DEBUG  Sending obd data finished
+2021-06-09 14:23:33 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:23:33 DEBUG  Sending obd data finished
+2021-06-09 14:23:37 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:23:37 DEBUG  Sending obd data finished
+2021-06-09 14:23:41 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:23:41 DEBUG  Sending obd data finished
+2021-06-09 14:23:44 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:23:45 DEBUG  Sending obd data finished
+2021-06-09 14:23:48 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:23:48 DEBUG  Sending obd data finished
+2021-06-09 14:23:52 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:23:52 DEBUG  Sending obd data finished
+2021-06-09 14:23:55 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:23:55 DEBUG  Sending obd data finished
+2021-06-09 14:23:59 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:23:59 DEBUG  Sending obd data finished
+2021-06-09 14:24:02 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:24:02 DEBUG  Sending obd data finished
+2021-06-09 14:24:06 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:24:06 DEBUG  Sending obd data finished
+2021-06-09 14:24:09 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:24:09 DEBUG  Sending obd data finished
+2021-06-09 14:24:12 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:24:12 DEBUG  Sending obd data finished
+2021-06-09 14:24:16 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:24:16 DEBUG  Sending obd data finished
+2021-06-09 14:24:20 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:24:20 DEBUG  Sending obd data finished
+2021-06-09 14:24:23 DEBUG  Resetting dropped connection: michal.vps.kronmar.net
+2021-06-09 14:24:25 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:24:25 DEBUG  Sending obd data finished
+2021-06-09 14:24:28 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:24:28 DEBUG  Sending obd data finished
+2021-06-09 14:24:32 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:24:32 DEBUG  Sending obd data finished
+2021-06-09 14:24:35 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:24:35 DEBUG  Sending obd data finished
+2021-06-09 14:24:40 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:24:40 DEBUG  Sending obd data finished
+2021-06-09 14:24:43 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:24:43 DEBUG  Sending obd data finished
+2021-06-09 14:24:46 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:24:46 DEBUG  Sending obd data finished
+2021-06-09 14:24:50 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:24:50 DEBUG  Sending obd data finished
+2021-06-09 14:24:54 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:24:54 DEBUG  Sending obd data finished
+2021-06-09 14:24:57 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:24:57 DEBUG  Sending obd data finished
+2021-06-09 14:25:01 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:25:01 DEBUG  Sending obd data finished
+2021-06-09 14:25:05 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:25:05 DEBUG  Sending obd data finished
+2021-06-09 14:25:08 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:25:08 DEBUG  Sending obd data finished
+2021-06-09 14:25:12 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:25:12 DEBUG  Sending obd data finished
+2021-06-09 14:25:16 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:25:16 DEBUG  Sending obd data finished
+2021-06-09 14:25:20 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:25:20 DEBUG  Sending obd data finished
+2021-06-09 14:25:24 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:25:24 DEBUG  Sending obd data finished
+2021-06-09 14:25:27 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:25:27 DEBUG  Sending obd data finished
+2021-06-09 14:25:31 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:25:31 DEBUG  Sending obd data finished
+2021-06-09 14:25:34 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:25:34 DEBUG  Sending obd data finished
+2021-06-09 14:25:38 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:25:38 DEBUG  Sending obd data finished
+2021-06-09 14:25:42 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:25:42 DEBUG  Sending obd data finished
+2021-06-09 14:25:45 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:25:45 DEBUG  Sending obd data finished
+2021-06-09 14:25:49 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:25:49 DEBUG  Sending obd data finished
+2021-06-09 14:25:53 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:25:53 DEBUG  Sending obd data finished
+2021-06-09 14:25:56 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:25:56 DEBUG  Sending obd data finished
+2021-06-09 14:26:00 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:26:00 DEBUG  Sending obd data finished
+2021-06-09 14:26:03 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:26:03 DEBUG  Sending obd data finished
+2021-06-09 14:26:07 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:26:07 DEBUG  Sending obd data finished
+2021-06-09 14:26:10 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:26:10 DEBUG  Sending obd data finished
+2021-06-09 14:26:14 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:26:14 DEBUG  Sending obd data finished
+2021-06-09 14:26:17 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:26:17 DEBUG  Sending obd data finished
+2021-06-09 14:26:21 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:26:21 DEBUG  Sending obd data finished
+2021-06-09 14:26:25 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:26:25 DEBUG  Sending obd data finished
+2021-06-09 14:26:28 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:26:28 DEBUG  Sending obd data finished
+2021-06-09 14:26:32 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:26:32 DEBUG  Sending obd data finished
+2021-06-09 14:26:35 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:26:35 DEBUG  Sending obd data finished
+2021-06-09 14:26:40 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:26:40 DEBUG  Sending obd data finished
+2021-06-09 14:26:43 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:26:43 DEBUG  Sending obd data finished
+2021-06-09 14:26:47 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:26:47 DEBUG  Sending obd data finished
+2021-06-09 14:26:50 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:26:50 DEBUG  Sending obd data finished
+2021-06-09 14:26:54 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:26:54 DEBUG  Sending obd data finished
+2021-06-09 14:26:58 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:26:58 DEBUG  Sending obd data finished
+2021-06-09 14:27:01 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:27:01 DEBUG  Sending obd data finished
+2021-06-09 14:27:05 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:27:05 DEBUG  Sending obd data finished
+2021-06-09 14:27:09 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:27:09 DEBUG  Sending obd data finished
+2021-06-09 14:27:13 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:27:13 DEBUG  Sending obd data finished
+2021-06-09 14:27:16 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:27:16 DEBUG  Sending obd data finished
+2021-06-09 14:27:20 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:27:21 DEBUG  Sending obd data finished
+2021-06-09 14:27:24 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:27:24 DEBUG  Sending obd data finished
+2021-06-09 14:27:29 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:27:29 DEBUG  Sending obd data finished
+2021-06-09 14:27:33 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:27:33 DEBUG  Sending obd data finished
+2021-06-09 14:27:37 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:27:37 DEBUG  Sending obd data finished
+2021-06-09 14:27:41 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:27:41 DEBUG  Sending obd data finished
+2021-06-09 14:27:45 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:27:45 DEBUG  Sending obd data finished
+2021-06-09 14:27:49 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:27:49 DEBUG  Sending obd data finished
+2021-06-09 14:27:53 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:27:53 DEBUG  Sending obd data finished
+2021-06-09 14:27:57 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:27:57 DEBUG  Sending obd data finished
+2021-06-09 14:28:01 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:28:01 DEBUG  Sending obd data finished
+2021-06-09 14:28:05 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:28:05 DEBUG  Sending obd data finished
+2021-06-09 14:28:10 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:28:10 DEBUG  Sending obd data finished
+2021-06-09 14:28:14 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:28:14 DEBUG  Sending obd data finished
+2021-06-09 14:28:19 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:28:19 DEBUG  Sending obd data finished
+2021-06-09 14:28:22 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:28:22 DEBUG  Sending obd data finished
+2021-06-09 14:28:26 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:28:26 DEBUG  Sending obd data finished
+2021-06-09 14:28:30 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:28:30 DEBUG  Sending obd data finished
+2021-06-09 14:28:33 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:28:33 DEBUG  Sending obd data finished
+2021-06-09 14:28:37 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:28:37 DEBUG  Sending obd data finished
+2021-06-09 14:28:41 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:28:41 DEBUG  Sending obd data finished
+2021-06-09 14:28:44 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:28:44 DEBUG  Sending obd data finished
+2021-06-09 14:28:48 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:28:48 DEBUG  Sending obd data finished
+2021-06-09 14:28:52 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:28:52 DEBUG  Sending obd data finished
+2021-06-09 14:28:55 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:28:55 DEBUG  Sending obd data finished
+2021-06-09 14:28:59 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:28:59 DEBUG  Sending obd data finished
+2021-06-09 14:29:02 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:29:02 DEBUG  Sending obd data finished
+2021-06-09 14:29:06 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:29:06 DEBUG  Sending obd data finished
+2021-06-09 14:29:10 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:29:10 DEBUG  Sending obd data finished
+2021-06-09 14:29:14 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:29:14 DEBUG  Sending obd data finished
+2021-06-09 14:29:17 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:29:17 DEBUG  Sending obd data finished
+2021-06-09 14:29:21 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:29:21 DEBUG  Sending obd data finished
+2021-06-09 14:29:25 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:29:25 DEBUG  Sending obd data finished
+2021-06-09 14:29:28 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:29:28 DEBUG  Sending obd data finished
+2021-06-09 14:29:32 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:29:32 DEBUG  Sending obd data finished
+2021-06-09 14:29:35 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:29:35 DEBUG  Sending obd data finished
+2021-06-09 14:29:39 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:29:39 DEBUG  Sending obd data finished
+2021-06-09 14:29:42 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:29:42 DEBUG  Sending obd data finished
+2021-06-09 14:29:46 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:29:46 DEBUG  Sending obd data finished
+2021-06-09 14:29:49 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:29:49 DEBUG  Sending obd data finished
+2021-06-09 14:29:53 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:29:53 DEBUG  Sending obd data finished
+2021-06-09 14:29:57 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:29:57 DEBUG  Sending obd data finished
+2021-06-09 14:30:00 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:30:00 DEBUG  Sending obd data finished
+2021-06-09 14:30:04 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:30:04 DEBUG  Sending obd data finished
+2021-06-09 14:30:08 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:30:08 DEBUG  Sending obd data finished
+2021-06-09 14:30:13 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:30:13 DEBUG  Sending obd data finished
+2021-06-09 14:30:16 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:30:16 DEBUG  Sending obd data finished
+2021-06-09 14:30:20 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:30:20 DEBUG  Sending obd data finished
+2021-06-09 14:30:23 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:30:23 DEBUG  Sending obd data finished
+2021-06-09 14:30:28 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:30:28 DEBUG  Sending obd data finished
+2021-06-09 14:30:32 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:30:32 DEBUG  Sending obd data finished
+2021-06-09 14:30:36 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:30:36 DEBUG  Sending obd data finished
+2021-06-09 14:30:39 DEBUG  Resetting dropped connection: michal.vps.kronmar.net
+2021-06-09 14:30:42 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:30:42 DEBUG  Sending obd data finished
+2021-06-09 14:30:46 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:30:46 DEBUG  Sending obd data finished
+2021-06-09 14:30:49 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:30:49 DEBUG  Sending obd data finished
+2021-06-09 14:30:53 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:30:53 DEBUG  Sending obd data finished
+2021-06-09 14:30:56 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:30:56 DEBUG  Sending obd data finished
+2021-06-09 14:31:01 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:31:01 DEBUG  Sending obd data finished
+2021-06-09 14:31:06 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:31:06 DEBUG  Sending obd data finished
+2021-06-09 14:31:10 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:31:10 DEBUG  Sending obd data finished
+2021-06-09 14:31:14 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:31:14 DEBUG  Sending obd data finished
+2021-06-09 14:31:17 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:31:17 DEBUG  Sending obd data finished
+2021-06-09 14:31:21 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:31:21 DEBUG  Sending obd data finished
+2021-06-09 14:31:24 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:31:24 DEBUG  Sending obd data finished
+2021-06-09 14:31:28 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:31:28 DEBUG  Sending obd data finished
+2021-06-09 14:31:32 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:31:32 DEBUG  Sending obd data finished
+2021-06-09 14:31:37 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:31:37 DEBUG  Sending obd data finished
+2021-06-09 14:31:41 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:31:41 DEBUG  Sending obd data finished
+2021-06-09 14:31:45 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:31:45 DEBUG  Sending obd data finished
+2021-06-09 14:31:48 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:31:48 DEBUG  Sending obd data finished
+2021-06-09 14:31:52 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:31:52 DEBUG  Sending obd data finished
+2021-06-09 14:31:56 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:31:56 DEBUG  Sending obd data finished
+2021-06-09 14:32:00 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:32:00 DEBUG  Sending obd data finished
+2021-06-09 14:32:05 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:32:05 DEBUG  Sending obd data finished
+2021-06-09 14:32:08 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:32:08 DEBUG  Sending obd data finished
+2021-06-09 14:32:13 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:32:13 DEBUG  Sending obd data finished
+2021-06-09 14:32:17 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:32:17 DEBUG  Sending obd data finished
+2021-06-09 14:32:20 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:32:20 DEBUG  Sending obd data finished
+2021-06-09 14:32:24 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:32:24 DEBUG  Sending obd data finished
+2021-06-09 14:32:28 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:32:28 DEBUG  Sending obd data finished
+2021-06-09 14:32:32 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:32:32 DEBUG  Sending obd data finished
+2021-06-09 14:32:35 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:32:35 DEBUG  Sending obd data finished
+2021-06-09 14:32:39 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:32:39 DEBUG  Sending obd data finished
+2021-06-09 14:32:43 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:32:43 DEBUG  Sending obd data finished
+2021-06-09 14:32:46 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:32:46 DEBUG  Sending obd data finished
+2021-06-09 14:32:50 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:32:50 DEBUG  Sending obd data finished
+2021-06-09 14:32:53 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:32:53 DEBUG  Sending obd data finished
+2021-06-09 14:32:57 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:32:57 DEBUG  Sending obd data finished
+2021-06-09 14:33:01 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:33:01 DEBUG  Sending obd data finished
+2021-06-09 14:33:04 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:33:04 DEBUG  Sending obd data finished
+2021-06-09 14:33:08 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:33:08 DEBUG  Sending obd data finished
+2021-06-09 14:33:13 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:33:13 DEBUG  Sending obd data finished
+2021-06-09 14:33:17 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:33:17 DEBUG  Sending obd data finished
+2021-06-09 14:33:20 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:33:20 DEBUG  Sending obd data finished
+2021-06-09 14:33:24 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:33:24 DEBUG  Sending obd data finished
+2021-06-09 14:33:28 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:33:28 DEBUG  Sending obd data finished
+2021-06-09 14:33:31 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:33:31 DEBUG  Sending obd data finished
+2021-06-09 14:33:35 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:33:35 DEBUG  Sending obd data finished
+2021-06-09 14:33:39 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:33:39 DEBUG  Sending obd data finished
+2021-06-09 14:33:43 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:33:43 DEBUG  Sending obd data finished
+2021-06-09 14:33:47 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:33:47 DEBUG  Sending obd data finished
+2021-06-09 14:33:50 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:33:50 DEBUG  Sending obd data finished
+2021-06-09 14:33:54 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:33:54 DEBUG  Sending obd data finished
+2021-06-09 14:33:59 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:33:59 DEBUG  Sending obd data finished
+2021-06-09 14:34:03 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:34:03 DEBUG  Sending obd data finished
+2021-06-09 14:34:07 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:34:07 DEBUG  Sending obd data finished
+2021-06-09 14:34:11 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:34:11 DEBUG  Sending obd data finished
+2021-06-09 14:34:15 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:34:15 DEBUG  Sending obd data finished
+2021-06-09 14:34:18 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:34:18 DEBUG  Sending obd data finished
+2021-06-09 14:34:22 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:34:22 DEBUG  Sending obd data finished
+2021-06-09 14:34:26 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:34:26 DEBUG  Sending obd data finished
+2021-06-09 14:34:29 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:34:29 DEBUG  Sending obd data finished
+2021-06-09 14:34:34 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:34:34 DEBUG  Sending obd data finished
+2021-06-09 14:34:37 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:34:37 DEBUG  Sending obd data finished
+2021-06-09 14:34:41 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:34:41 DEBUG  Sending obd data finished
+2021-06-09 14:34:45 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:34:45 DEBUG  Sending obd data finished
+2021-06-09 14:34:48 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:34:48 DEBUG  Sending obd data finished
+2021-06-09 14:34:52 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:34:52 DEBUG  Sending obd data finished
+2021-06-09 14:34:55 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:34:55 DEBUG  Sending obd data finished
+2021-06-09 14:34:59 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:34:59 DEBUG  Sending obd data finished
+2021-06-09 14:35:04 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:35:04 DEBUG  Sending obd data finished
+2021-06-09 14:35:07 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:35:07 DEBUG  Sending obd data finished
+2021-06-09 14:35:11 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:35:11 DEBUG  Sending obd data finished
+2021-06-09 14:35:15 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:35:15 DEBUG  Sending obd data finished
+2021-06-09 14:35:18 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:35:18 DEBUG  Sending obd data finished
+2021-06-09 14:35:22 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:35:22 DEBUG  Sending obd data finished
+2021-06-09 14:35:26 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:35:26 DEBUG  Sending obd data finished
+2021-06-09 14:35:29 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:35:29 DEBUG  Sending obd data finished
+2021-06-09 14:35:33 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:35:33 DEBUG  Sending obd data finished
+2021-06-09 14:35:36 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:35:36 DEBUG  Sending obd data finished
+2021-06-09 14:35:40 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:35:40 DEBUG  Sending obd data finished
+2021-06-09 14:35:44 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:35:44 DEBUG  Sending obd data finished
+2021-06-09 14:35:47 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:35:47 DEBUG  Sending obd data finished
+2021-06-09 14:35:51 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:35:51 DEBUG  Sending obd data finished
+2021-06-09 14:35:55 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:35:55 DEBUG  Sending obd data finished
+2021-06-09 14:35:58 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:35:58 DEBUG  Sending obd data finished
+2021-06-09 14:36:02 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:36:02 DEBUG  Sending obd data finished
+2021-06-09 14:36:07 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:36:07 DEBUG  Sending obd data finished
+2021-06-09 14:36:10 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:36:11 DEBUG  Sending obd data finished
+2021-06-09 14:36:14 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:36:14 DEBUG  Sending obd data finished
+2021-06-09 14:36:17 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:36:18 DEBUG  Sending obd data finished
+2021-06-09 14:36:22 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:36:22 DEBUG  Sending obd data finished
+2021-06-09 14:36:25 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:36:25 DEBUG  Sending obd data finished
+2021-06-09 14:36:29 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:36:29 DEBUG  Sending obd data finished
+2021-06-09 14:36:33 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:36:33 DEBUG  Sending obd data finished
+2021-06-09 14:36:36 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:36:36 DEBUG  Sending obd data finished
+2021-06-09 14:36:40 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:36:40 DEBUG  Sending obd data finished
+2021-06-09 14:36:43 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:36:43 DEBUG  Sending obd data finished
+2021-06-09 14:36:48 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:36:48 DEBUG  Sending obd data finished
+2021-06-09 14:36:52 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:36:52 DEBUG  Sending obd data finished
+2021-06-09 14:36:55 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:36:55 DEBUG  Sending obd data finished
+2021-06-09 14:36:59 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:36:59 DEBUG  Sending obd data finished
+2021-06-09 14:37:02 DEBUG  Resetting dropped connection: michal.vps.kronmar.net
+2021-06-09 14:37:03 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:37:03 DEBUG  Sending obd data finished
+2021-06-09 14:37:07 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:37:07 DEBUG  Sending obd data finished
+2021-06-09 14:37:11 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:37:11 DEBUG  Sending obd data finished
+2021-06-09 14:37:14 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:37:14 DEBUG  Sending obd data finished
+2021-06-09 14:37:19 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:37:19 DEBUG  Sending obd data finished
+2021-06-09 14:37:23 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:37:23 DEBUG  Sending obd data finished
+2021-06-09 14:37:26 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:37:26 DEBUG  Sending obd data finished
+2021-06-09 14:37:30 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:37:30 DEBUG  Sending obd data finished
+2021-06-09 14:37:34 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:37:34 DEBUG  Sending obd data finished
+2021-06-09 14:37:38 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:37:38 DEBUG  Sending obd data finished
+2021-06-09 14:37:42 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:37:43 DEBUG  Sending obd data finished
+2021-06-09 14:37:46 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:37:46 DEBUG  Sending obd data finished
+2021-06-09 14:37:50 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:37:50 DEBUG  Sending obd data finished
+2021-06-09 14:37:54 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:37:54 DEBUG  Sending obd data finished
+2021-06-09 14:37:58 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:37:58 DEBUG  Sending obd data finished
+2021-06-09 14:38:02 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:38:02 DEBUG  Sending obd data finished
+2021-06-09 14:38:06 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:38:06 DEBUG  Sending obd data finished
+2021-06-09 14:38:09 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:38:09 DEBUG  Sending obd data finished
+2021-06-09 14:38:13 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:38:13 DEBUG  Sending obd data finished
+2021-06-09 14:38:17 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:38:17 DEBUG  Sending obd data finished
+2021-06-09 14:38:21 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:38:21 DEBUG  Sending obd data finished
+2021-06-09 14:38:24 DEBUG  https://michal.vps.kronmar.net:443 "POST /API/track/updateTrackData/ HTTP/1.1" 200 0
+2021-06-09 14:38:24 DEBUG  Sending obd data finished
+2021-06-09 16:02:07 DEBUG  Config file have configuration for connection with server
+2021-06-09 16:02:07 DEBUG  Starting new HTTPS connection (1): michal.vps.kronmar.net:443
