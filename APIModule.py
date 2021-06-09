@@ -71,7 +71,7 @@ class RequestAPI:
 
     def start_track(self):
         gps_pos = self.gps.get_only_position_values()
-        start_data = json.dumps({ "nfc_tag":"ABB", "time": datetime.datetime.now().strftime("%s"),"private": False, "gps_longitude":gps_pos[0],"gps_latitude":gps_pos[1]})
+        start_data = json.dumps({ "nfc_tag":"ACC", "time": datetime.datetime.now().strftime("%s"),"private": False, "gps_longitude":gps_pos[0],"gps_latitude":gps_pos[1]})
         for i in range(self.connection_retries_number):
             response = self.POST("API/track/start",start_data)
             if response.status_code == 200:

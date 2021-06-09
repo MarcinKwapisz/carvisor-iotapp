@@ -19,13 +19,18 @@ class gps:
         def get_fake_gps_position(self):
                 position = {'longitude': float("%.5f" % self.longitude),
                  "latitude": float("%.5f" % self.latitude)}
-                self.latitude -= 0.00060
                 return position
 
         def get_only_position_values(self):
-                self.get_current_position_from_phone()
+                self.fake_location_move()
+                self.longitude = float("%.5f" % float(self.longitude))
+                self.latitude = float("%.5f" % float(self.latitude))
                 return [self.longitude,self.latitude]
 
+        def fake_location_move(self):
+                self.longitude -= 0.00010
+
         def get_position(self):
-                return self.get_current_position_from_phone()
-                # return self.get_fake_gps_position()
+                self.fake_location_move()
+                # return self.get_current_position_from_phone()
+                return self.get_fake_gps_position()
