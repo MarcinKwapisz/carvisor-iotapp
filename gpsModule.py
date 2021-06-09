@@ -23,8 +23,7 @@ class gps:
                 return position
 
         def get_only_position_values(self):
-                self.longitude = float("%.5f" % float(gps_real[0]))
-                self.latitude = float("%.5f" % float(gps_real[1]))
+                self.get_current_position_from_phone()
                 return [self.longitude,self.latitude]
 
         def get_position(self):
