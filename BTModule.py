@@ -7,7 +7,7 @@ class Bluetooth:
         self.server_sock.bind(("", bluetooth.PORT_ANY))
         self.server_sock.listen(1)
 
-        self.port = server_sock.getsockname()[1]
+        self.port = self.server_sock.getsockname()[1]
 
         uuid = "94f39d29-7d6d-437d-973b-fba39e49d4ee"
 
