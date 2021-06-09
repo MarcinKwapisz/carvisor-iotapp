@@ -2812,3 +2812,12 @@
 2021-06-09 14:38:24 DEBUG  Sending obd data finished
 2021-06-09 16:02:07 DEBUG  Config file have configuration for connection with server
 2021-06-09 16:02:07 DEBUG  Starting new HTTPS connection (1): michal.vps.kronmar.net:443
+2021-06-09 17:01:17 WARNING Server unreachable, error code: 500
+2021-06-09 17:01:17 ERROR  [Errno 2] could not open port /dev/pts/2: [Errno 2] No such file or directory: '/dev/pts/2'
+2021-06-09 17:01:17 WARNING Cannot load commands: No connection to car
+2021-06-09 17:01:22 ERROR  [Errno 2] could not open port /dev/pts/2: [Errno 2] No such file or directory: '/dev/pts/2'
+2021-06-09 17:01:22 WARNING Cannot load commands: No connection to car
+2021-06-09 17:01:27 ERROR  [Errno 2] could not open port /dev/pts/2: [Errno 2] No such file or directory: '/dev/pts/2'
+2021-06-09 17:01:27 WARNING Cannot load commands: No connection to car
+2021-06-09 17:01:32 ERROR  [Errno 2] could not open port /dev/pts/2: [Errno 2] No such file or directory: '/dev/pts/2'
+2021-06-09 17:01:32 WARNING Cannot load commands: No connection to car
