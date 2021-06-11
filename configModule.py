@@ -7,7 +7,7 @@ import os
 
 class Config:
 
-    def __init__(self, config_filename = 'config.ini', bluetooth):
+    def __init__(self, config_filename, bluetooth):
         # initializing config parser and checking if config file exist
         # if config file doesn't exist, create a new one
         # if file exist, read config
