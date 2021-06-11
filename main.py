@@ -31,7 +31,7 @@ class CarVisor:
             # no config to login to server
             self.server_unreachable_handler()
         self.send = Sender(self.config.return_send_interval(), self.API, self.gps)
-        self.init_obd()
+        # self.init_obd()
 
 
     def start_logging(self):
