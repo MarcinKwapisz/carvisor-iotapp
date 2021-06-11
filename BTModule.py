@@ -30,7 +30,6 @@ class Bluetooth:
         while True:
             data = client_sock.recv(1024)
             print("Received", data)
-            client_sock.send("ok")
 
 
         logging.debug("Bluetooth disconnected.")
