@@ -1,3 +1,5 @@
+import logging
+
 import bluetooth
 
 class Bluetooth:
@@ -18,22 +20,22 @@ class Bluetooth:
                                     )
 
     def connect(self):
-        print("Waiting for connection on RFCOMM channel", self.port)
+        logging.debug("Waiting for connection on RFCOMM channel", self.port)
 
         client_sock, client_info = self.server_sock.accept()
-        print("Accepted connection from", client_info)
-
+        logging.debug("Accepted connection from", client_info)
+        data = ''
         while True:
-            data = client_sock.recv(1024)
+            data += client_sock.recv(1024)
             print("Received", data)
             client_sock.send("ok")
 
 
-        print("Disconnected.")
+        logging.debug("Disconnected.")
 
         client_sock.close()
         self.server_sock.close()
-        print("All done.")
+        logging.debug("All done.")
 
 bt = Bluetooth()
 bt.connect()
