@@ -28,7 +28,8 @@ class Config:
                                 'password': ''}
         self.parser['server'] = {'sendinterval': '',
                                 'locationinterval': ''}
-        self.parser['login'] = json.loads(self.BT.connect())
+        # self.parser['login'] = json.loads(self.BT.connect())
+        print(json.loads(self.BT.connect()))
         self.parser.write(open(self.config_filename, 'w'))
 
     def check_server_credentials(self):
