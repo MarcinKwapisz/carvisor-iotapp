@@ -27,9 +27,8 @@ class Bluetooth:
 
         client_sock, client_info = self.server_sock.accept()
         logging.debug("Accepted bluetooth connection from", client_info)
-        data = ''
         while True:
-            data += client_sock.recv(1024)
+            data = client_sock.recv(1024)
             print("Received", data)
             client_sock.send("ok")
 
@@ -40,3 +39,5 @@ class Bluetooth:
         self.server_sock.close()
         logging.debug("BT all done.")
         return data.decode("UTF-8")
+
+bt = Bluetooth()
