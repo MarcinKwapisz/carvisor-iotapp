@@ -7,6 +7,7 @@ from sendModule import Sender
 from APIModule import RequestAPI
 from savingModule import Saver
 from gpsModule import gps
+from BTModule import Bluetooth
 
 
 class CarVisor:
@@ -14,7 +15,8 @@ class CarVisor:
     def __init__(self):
         self.start_logging()
         self.gps = gps()
-        self.config = Config()
+        self.BT = Bluetooth()
+        self.config = Config('config.ini',self.BT)
         if self.config.check_server_credentials():
             self.saver = Saver()
             self.API = RequestAPI(self.config.section_returner('login'),self.saver,self.gps)

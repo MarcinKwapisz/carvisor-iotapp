@@ -1,12 +1,13 @@
 import logging
 import bluetooth
 import os
+import subprocess
 
 class Bluetooth:
 
     def __init__(self):
-        BT_name = os.system("./BTStart.sh")
-        print(BT_name)
+        os.system("sudo ./BTStart.sh")
+        BT_name_output = subprocess.check_output("sudo hciconfig hci0 name | grep Name | cut -d' ' -f2", shell=True).decode("UTF-8").rstrip("\n")
         self.server_sock = bluetooth.BluetoothSocket(bluetooth.RFCOMM)
         self.server_sock.bind(("", bluetooth.PORT_ANY))
         self.server_sock.listen(1)
@@ -15,7 +16,7 @@ class Bluetooth:
 
         uuid = "94f39d29-7d6d-437d-973b-fba39e49d4ee"
 
-        bluetooth.advertise_service(self.server_sock, BT_name, service_id=uuid,
+        bluetooth.advertise_service(self.server_sock, BT_name_output, service_id=uuid,
                                     service_classes=[uuid, bluetooth.SERIAL_PORT_CLASS],
                                     profiles=[bluetooth.SERIAL_PORT_PROFILE],
                                     # protocols=[bluetooth.OBEX_UUID]
@@ -37,7 +38,5 @@ class Bluetooth:
 
         client_sock.close()
         self.server_sock.close()
-        logging.debug("All done.")
+        logging.debug("BT all done.")
         return data.decode("UTF-8")
-bt = Bluetooth()
-bt.connect()

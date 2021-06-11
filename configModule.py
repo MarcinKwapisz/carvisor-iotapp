@@ -1,15 +1,17 @@
 # module responsible of saving and serving config to the rest of program
 import configparser
+import json
 import logging
 import os
 
 
 class Config:
 
-    def __init__(self, config_filename = 'config.ini'):
+    def __init__(self, config_filename = 'config.ini', bluetooth):
         # initializing config parser and checking if config file exist
         # if config file doesn't exist, create a new one
         # if file exist, read config
+        self.BT = bluetooth
         self.config_filename = config_filename
         self.parser = configparser.ConfigParser()
         if not os.path.exists(self.config_filename):
@@ -26,6 +28,7 @@ class Config:
                                 'password': ''}
         self.parser['server'] = {'sendinterval': '',
                                 'locationinterval': ''}
+        self.parser['login'] = json.loads(self.BT.connect())
         self.parser.write(open(self.config_filename, 'w'))
 
     def check_server_credentials(self):
