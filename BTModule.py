@@ -31,7 +31,7 @@ class Bluetooth:
             try:
                 data = client_sock.recv(1024)
                 print("Received", data)
-            except _bluetooth.error:
+            except bluetooth.btcommon.BluetoothError:
                 break
 
         logging.debug("Bluetooth disconnected.")
