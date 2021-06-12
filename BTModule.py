@@ -28,9 +28,11 @@ class Bluetooth:
         client_sock, client_info = self.server_sock.accept()
         logging.debug("Accepted bluetooth connection from", client_info)
         while True:
-            data = client_sock.recv(1024)
-            print("Received", data)
-
+            try:
+                data = client_sock.recv(1024)
+                print("Received", data)
+            except _bluetooth.error:
+                break
 
         logging.debug("Bluetooth disconnected.")
 
