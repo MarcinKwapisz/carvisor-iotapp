@@ -1,36 +1,30 @@
-import re
+from serial import Serial
+import pynmea2
+
 
 class gps:
 
-        def __init__(self):
-                self.longitude = 16.92397
-                self.latitude = 52.45726
+    def __init__(self):
+        self.longitude = None
+        self.latitude = None
+        self.serial = Serial("/dev/ttyAMA0", baudrate=9600, timeout=0.2)
 
-        def get_current_position_from_phone(self):
-                try:
-                        location_file = open("location", 'r').readlines()[-3]
-                        location_file = location_file.split("│")[1]
-                        self.longitude, self.latitude = re.findall('[0-9]*[\.]{1}[0-9]*', location_file)
-                except UnicodeDecodeError:
-                        print("ERRROROROROROORORRO")
-                return {'longitude': float("%.5f" % float(self.longitude)),
-                                        "latitude": float("%.5f" % float(self.latitude))}
+    def gps(self):
+        while True:
+            try:
+                gps_serial_line = self.serial.readline().decode("UTF-8")
+            except UnicodeDecodeError:
+                gps_serial_line = self.serial.readline()
+            if gps_serial_line[0:6] == '$GPRMC':
+                gps_output = pynmea2.parse(gps_serial_line)
+                self.latitude = float("%.5f" % float(gps_output.latitude))
+                self.longitude = float("%.5f" % float(gps_output.longitude))
+                return
 
-        def get_fake_gps_position(self):
-                position = {'longitude': float("%.5f" % self.longitude),
-                 "latitude": float("%.5f" % self.latitude)}
-                return position
+    def get_only_position_values(self):
+        self.gps()
+        return [self.longitude, self.latitude]
 
-        def get_only_position_values(self):
-                self.fake_location_move()
-                self.longitude = float("%.5f" % float(self.longitude))
-                self.latitude = float("%.5f" % float(self.latitude))
-                return [self.longitude,self.latitude]
-
-        def fake_location_move(self):
-                self.longitude -= 0.00010
-
-        def get_position(self):
-                self.fake_location_move()
-                # return self.get_current_position_from_phone()
-                return self.get_fake_gps_position()
+    def get_position(self):
+        self.gps()
+        return {"longitude": self.longitude, "latitude": self.latitude}
