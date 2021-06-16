@@ -23,6 +23,7 @@ class Bluetooth:
                                     )
 
     def connect(self):
+        print("gg")
         logging.debug("Waiting for bluetooth connection on RFCOMM channel", self.port)
 
         client_sock, client_info = self.server_sock.accept()
