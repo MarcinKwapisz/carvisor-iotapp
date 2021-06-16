@@ -38,5 +38,4 @@ class Bluetooth:
         client_sock.close()
         self.server_sock.close()
         logging.debug("BT all done.")
-        print(data.decode("UTF-8"))
         return data.decode("UTF-8")
