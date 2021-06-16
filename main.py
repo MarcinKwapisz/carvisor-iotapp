@@ -16,7 +16,7 @@ class CarVisor:
         self.start_logging()
         self.gps = gps()
         self.BT = Bluetooth()
-        # self.config = Config('config.ini')
+        # self.BT = None
         self.config = Config('config.ini', self.BT)
         if self.config.check_server_credentials():
             self.saver = Saver()
