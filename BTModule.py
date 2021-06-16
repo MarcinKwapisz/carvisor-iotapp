@@ -7,7 +7,7 @@ class Bluetooth:
 
     def __init__(self):
         os.system("./BTStart.sh")
-        BT_name_output = subprocess.check_output("sudo hciconfig hci0 name | grep Name | cut -d' ' -f2", shell=True).decode("UTF-8").rstrip("\n")
+        BT_name_output = subprocess.check_output("sudo hciconfig hci0 name | grep Name | cut -d' ' -f2", shell=True).decode("UTF-8").rstrip("\n").replace("'","")
         print(BT_name_output)
         self.server_sock = bluetooth.BluetoothSocket(bluetooth.RFCOMM)
         self.server_sock.bind(("", bluetooth.PORT_ANY))
