@@ -30,6 +30,7 @@ class Config:
                                 'locationinterval': ''}
         print("Waiting for config from phone app")
         self.parser['login'] = json.loads(self.BT.connect())
+        print("Rejestracja: {} wraz z hasłem i adresem serwera zapisane w konfiguracji".format(self.parser['login']['licenseplate']))
         self.parser.write(open(self.config_filename, 'w'))
 
     def check_server_credentials(self):
