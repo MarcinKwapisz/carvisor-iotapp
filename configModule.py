@@ -28,6 +28,7 @@ class Config:
                                 'password': ''}
         self.parser['server'] = {'sendinterval': '',
                                 'locationinterval': ''}
+        print("Waiting for config from phone app")
         self.parser['login'] = json.loads(self.BT.connect())
         self.parser.write(open(self.config_filename, 'w'))
 
