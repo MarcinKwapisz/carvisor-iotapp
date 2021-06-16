@@ -8,7 +8,7 @@ class RequestAPI:
     def __init__(self, login_data,saver,gps):
         # initialize variables with login data from config file
         self.gps = gps
-        self.base_url = login_data['base_url']
+        self.base_url = login_data['adress']
         self.saver = saver
         self.connection_retries_number = 3
         self.login_data = json.dumps({"licensePlate": login_data['license_plate'], 'password': login_data['password']})
