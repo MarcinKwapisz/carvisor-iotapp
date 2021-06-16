@@ -54,7 +54,7 @@ class RequestAPI:
             logging.debug("Sending obd data finished")
             self.saver.send_payload()
         else:
-            self.store_obd_data(obd_data)
+            # self.store_obd_data(obd_data)
             logging.warning("Problem occurred when sending obd data to server, error code: " + str(response.status_code))
 
     def send_saved_data(self, obd_data):
@@ -67,9 +67,9 @@ class RequestAPI:
             logging.warning("Problem occurred when sending obd data to server, error code: " + str(response.status_code))
             return False
 
-    def start_track(self):
+    def start_track(self,tag):
         gps_pos = self.gps.get_only_position_values()
-        start_data = json.dumps({ "nfc_tag":"ACC", "time": datetime.datetime.now().strftime("%s"),"private": False, "gps_longitude":gps_pos[0],"gps_latitude":gps_pos[1]})
+        start_data = json.dumps({ "nfc_tag":tag, "time": datetime.datetime.now().strftime("%s"),"private": False, "gps_longitude":gps_pos[0],"gps_latitude":gps_pos[1]})
         for i in range(self.connection_retries_number):
             response = self.POST("API/track/start",start_data)
             if response.status_code == 200:

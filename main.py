@@ -25,7 +25,7 @@ class CarVisor:
                 # everything is fine, IoT can send data to server
                 self.saver.get_API(self.API)
                 self.get_config_from_server()
-                # self.API.start_track()
+                self.API.start_track("ACC")
             else:
                 # problem with authorization, sending to local storage
                 self.server_unreachable_handler()
@@ -33,7 +33,7 @@ class CarVisor:
             # no config to login to server
             self.server_unreachable_handler()
         self.send = Sender(self.config.return_send_interval(), self.API, self.gps)
-        # self.init_obd()
+        self.init_obd()
 
     def start_logging(self):
         logging.basicConfig(filename='carvisor.log',
