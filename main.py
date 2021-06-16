@@ -25,7 +25,7 @@ class CarVisor:
                 # everything is fine, IoT can send data to server
                 self.saver.get_API(self.API)
                 self.get_config_from_server()
-                self.API.start_track()
+                # self.API.start_track()
             else:
                 # problem with authorization, sending to local storage
                 self.server_unreachable_handler()
