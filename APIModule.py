@@ -1,6 +1,5 @@
 import datetime
 import logging
-import asyncio
 import requests
 import json
 
@@ -96,7 +95,14 @@ class RequestAPI:
             return False
 
     def get_config_from_server(self):
-        return self.config
+        response = self.GET("API/carConfiguration/get/")
+        if response.status_code == 200:
+            logging.debug("Config from server downloaded")
+            return response.json()
+        else:
+            logging.warning("Problem occurred with getting a configuration: " + str(response.status_code))
+            return False
+
 
     def store_obd_data(self,data_to_save):
         self.saver.send_obd_data(data_to_save)

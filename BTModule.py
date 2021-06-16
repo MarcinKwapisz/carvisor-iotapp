@@ -18,8 +18,7 @@ class Bluetooth:
 
         bluetooth.advertise_service(self.server_sock, BT_name_output, service_id=uuid,
                                     service_classes=[uuid, bluetooth.SERIAL_PORT_CLASS],
-                                    profiles=[bluetooth.SERIAL_PORT_PROFILE],
-                                    # protocols=[bluetooth.OBEX_UUID]
+                                    profiles=[bluetooth.SERIAL_PORT_PROFILE]
                                     )
 
     def connect(self):

@@ -7,7 +7,7 @@ import os
 
 class Config:
 
-    def __init__(self, config_filename, bluetooth):
+    def __init__(self, config_filename, bluetooth=None):
         # initializing config parser and checking if config file exist
         # if config file doesn't exist, create a new one
         # if file exist, read config
@@ -32,7 +32,7 @@ class Config:
         self.parser.write(open(self.config_filename, 'w'))
 
     def check_server_credentials(self):
-        # looking if there is workable config
+        # looking if there is workable config saved locally
         if all([ values == '' for values in self.parser['login'].values()]):
             logging.info('No server connection configured')
             return False
@@ -52,10 +52,11 @@ class Config:
 
     def get_config_from_local(self):
         if all([ values == '' for values in self.parser['server'].values()]):
-            logging.info('No local configuration saved')
+            logging.warning('No local configuration saved')
             return False
         else:
-            logging.debug('Configuration from local')
+            logging.debug('Configuration from local available')
             return True
+
     def return_send_interval(self):
         return self.parser['server']['sendinterval']

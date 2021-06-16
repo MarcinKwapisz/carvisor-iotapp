@@ -16,13 +16,15 @@ class CarVisor:
         self.start_logging()
         self.gps = gps()
         self.BT = Bluetooth()
-        self.config = Config('config.ini',self.BT)
+        # self.config = Config('config.ini')
+        self.config = Config('config.ini', self.BT)
         if self.config.check_server_credentials():
             self.saver = Saver()
-            self.API = RequestAPI(self.config.section_returner('login'),self.saver,self.gps)
+            self.API = RequestAPI(self.config.section_returner('login'), self.saver, self.gps)
             if self.API.check_authorization():
                 # everything is fine, IoT can send data to server
                 self.saver.get_API(self.API)
+                self.get_config_from_server()
                 self.API.start_track()
             else:
                 # problem with authorization, sending to local storage
@@ -33,12 +35,12 @@ class CarVisor:
         self.send = Sender(self.config.return_send_interval(), self.API, self.gps)
         # self.init_obd()
 
-
     def start_logging(self):
         logging.basicConfig(filename='carvisor.log',
-                          format='%(asctime)s %(levelname)-6s %(message)s',
-                           level=logging.WARNING,
-                           datefmt='%Y-%m-%d %H:%M:%S')
+                            format='%(asctime)s %(levelname)-6s %(message)s',
+                            level=logging.WARNING,
+                            datefmt='%Y-%m-%d %H:%M:%S')
+
     def init_obd(self):
         self.obd = ObdReader(self.send)
         while not self.obd.check_connection():
@@ -51,8 +53,17 @@ class CarVisor:
         input("Rozpoczęto odczyt OBD.\n")
 
     def server_unreachable_handler(self):
+        # changing API module to Saver for easy getting data
         logging.warning("Server unreachable, saving data locally")
         self.API = Saver()
-        del (self.saver)
+        del self.saver
+
+    def get_config_from_server(self):
+        config = self.API.get_config_from_server()
+        if config:
+            self.config.get_config_from_server(config)
+        else:
+            pass
+
 
 start = CarVisor()

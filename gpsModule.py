@@ -7,7 +7,7 @@ class gps:
     def __init__(self):
         self.longitude = None
         self.latitude = None
-        self.serial = Serial("/dev/ttyAMA0", baudrate=9600, timeout=0.2)
+        # self.serial = Serial("/dev/ttyAMA0", baudrate=9600, timeout=0.2)
 
     # def gps(self):
     #     while True:
