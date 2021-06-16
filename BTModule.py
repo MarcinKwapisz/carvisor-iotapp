@@ -19,11 +19,11 @@ class Bluetooth:
 
         bluetooth.advertise_service(self.server_sock, BT_name_output, service_id=uuid,
                                     service_classes=[uuid, bluetooth.SERIAL_PORT_CLASS],
-                                    profiles=[bluetooth.SERIAL_PORT_PROFILE]
+                                    profiles=[bluetooth.SERIAL_PORT_PROFILE],
+                                    # protocols=[bluetooth.OBEX_UUID]
                                     )
 
     def connect(self):
-        print("gg")
         logging.debug("Waiting for bluetooth connection on RFCOMM channel", self.port)
 
         client_sock, client_info = self.server_sock.accept()
