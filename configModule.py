@@ -24,7 +24,7 @@ class Config:
     def create_new_config(self):
         # when there is no config file, this function is creating a new file with empty config
         self.parser['login'] = {'adress': '',
-                                'licensePlate': '',
+                                'licenseplate': '',
                                 'password': ''}
         self.parser['server'] = {'sendinterval': '',
                                 'locationinterval': ''}

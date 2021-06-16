@@ -11,7 +11,7 @@ class RequestAPI:
         self.base_url = login_data['adress']
         self.saver = saver
         self.connection_retries_number = 3
-        self.login_data = json.dumps({"licensePlate": login_data['licensePlate'], 'password': login_data['password']})
+        self.login_data = json.dumps({"licensePlate": login_data['licenseplate'], 'password': login_data['password']})
         self.create_own_response()
         self.session = requests.Session()
         self.start_session_car()
