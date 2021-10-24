@@ -7,7 +7,7 @@ from sendModule import Sender
 from APIModule import RequestAPI
 from savingModule import Saver
 from gpsModule import gps
-from BTModule import Bluetooth
+from BTModule import Bluetozoth
 
 
 class CarVisor:
