@@ -8,6 +8,7 @@ from APIModule import RequestAPI
 from savingModule import Saver
 from gpsModule import gps
 from BTModule import Bluetozoth
+from nfcModule import nfcModule
 
 
 class CarVisor:
@@ -16,6 +17,7 @@ class CarVisor:
         self.start_logging()
         self.gps = gps()
         self.BT = Bluetooth()
+        self.nfc = nfcModule()
         # self.BT = None
         self.config = Config('config.ini', self.BT)
         if self.config.check_server_credentials():
@@ -25,7 +27,7 @@ class CarVisor:
                 # everything is fine, IoT can send data to server
                 self.saver.get_API(self.API)
                 self.get_config_from_server()
-                self.API.start_track("ACC")
+                self.API.start_track(self.nfc.get_tag())
             else:
                 # problem with authorization, sending to local storage
                 self.server_unreachable_handler()
