@@ -5,11 +5,10 @@ import json
 
 class RequestAPI:
 
-    def __init__(self, login_data,saver,gps):
+    def __init__(self, login_data,gps):
         # initialize variables with login data from config file
         self.gps = gps
         self.base_url = login_data['adress']
-        self.saver = saver
         self.connection_retries_number = 3
         self.login_data = json.dumps({"licensePlate": login_data['licenseplate'], 'password': login_data['password']})
         self.create_own_response()
@@ -49,23 +48,10 @@ class RequestAPI:
 
     def send_obd_data(self, obd_data):
         response = self.POST("API/track/updateTrackData/",json.dumps(obd_data))
-        self.store_obd_data(obd_data)
         if response.status_code == 200:
             logging.debug("Sending obd data finished")
-            # self.saver.send_payload()
-        else:
-            # self.store_obd_data(obd_data)
-            logging.warning("Problem occurred when sending obd data to server, error code: " + str(response.status_code))
-
-    def send_saved_data(self, obd_data):
-        response = self.POST("API/track/updateTrackData/",json.dumps(obd_data))
-        print(response.content)
-        if response.status_code == 200:
-            logging.debug("Sending obd data finished")
-            return True
         else:
             logging.warning("Problem occurred when sending obd data to server, error code: " + str(response.status_code))
-            return False
 
     def start_track(self,tag):
         gps_pos = self.gps.get_only_position_values()
@@ -103,9 +89,6 @@ class RequestAPI:
             logging.warning("Problem occurred with getting a configuration: " + str(response.status_code))
             return False
 
-
-    def store_obd_data(self,data_to_save):
-        self.saver.send_obd_data(data_to_save)
 
     def create_own_response(self):
         self.failure_response = requests.models.Response()

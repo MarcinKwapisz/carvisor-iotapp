@@ -4,6 +4,7 @@ from nfc.clf import RemoteTarget
 
 class nfcModule:
 
+
     def __init__(self):
         self.clf = nfc.ContactlessFrontend('tty:AMA2:pn532')
 

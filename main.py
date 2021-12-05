@@ -5,9 +5,8 @@ from configModule import Config
 from obdModule import ObdReader
 from sendModule import Sender
 from APIModule import RequestAPI
-from savingModule import Saver
 from gpsModule import gps
-from BTModule import Bluetozoth
+from BTModule import Bluetooth
 from nfcModule import nfcModule
 
 
@@ -18,14 +17,11 @@ class CarVisor:
         self.gps = gps()
         self.BT = Bluetooth()
         self.nfc = nfcModule()
-        # self.BT = None
         self.config = Config('config.ini', self.BT)
         if self.config.check_server_credentials():
-            self.saver = Saver()
-            self.API = RequestAPI(self.config.section_returner('login'), self.saver, self.gps)
+            self.API = RequestAPI(self.config.section_returner('login'), self.gps)
             if self.API.check_authorization():
                 # everything is fine, IoT can send data to server
-                self.saver.get_API(self.API)
                 self.get_config_from_server()
                 self.API.start_track(self.nfc.get_tag())
             else:
