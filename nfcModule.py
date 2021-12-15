@@ -14,5 +14,5 @@ class nfcModule:
                 pass
             else:
                 tag = nfc.tag.activate(self.clf, target)
-                print(str(tag).split("ID=")[1])
+                print(str(tag).split("ID="))
                 return str(tag).split("ID=")[1]
