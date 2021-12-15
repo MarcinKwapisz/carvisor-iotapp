@@ -23,7 +23,9 @@ class CarVisor:
             if self.API.check_authorization():
                 # everything is fine, IoT can send data to server
                 self.get_config_from_server()
-                self.API.start_track(self.nfc.get_tag())
+                self.nfc.get_tag()
+                self.API.start_track("AAC")
+                # self.API.start_track(self.nfc.get_tag())
             else:
                 # problem with authorization, sending to local storage
                 # self.server_unreachable_handler()
