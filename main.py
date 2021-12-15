@@ -26,10 +26,10 @@ class CarVisor:
                 self.API.start_track(self.nfc.get_tag())
             else:
                 # problem with authorization, sending to local storage
-                self.server_unreachable_handler()
+                # self.server_unreachable_handler()
         else:
             # no config to login to server
-            self.server_unreachable_handler()
+            # self.server_unreachable_handler()
         self.send = Sender(self.config.return_send_interval(), self.API, self.gps)
         self.init_obd()
 

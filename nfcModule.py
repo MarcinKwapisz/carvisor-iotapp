@@ -1,13 +1,10 @@
 import nfc
 from nfc.clf import RemoteTarget
 
-
 class nfcModule:
-
 
     def __init__(self):
         self.clf = nfc.ContactlessFrontend('tty:AMA2:pn532')
-
 
     def get_tag(self):
         target = None
@@ -17,8 +14,5 @@ class nfcModule:
                 pass
             else:
                 tag = nfc.tag.activate(self.clf, target)
+                print(str(tag).split("ID=")[1])
                 return str(tag).split("ID=")[1]
-
-
-
-
