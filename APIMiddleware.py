@@ -27,12 +27,12 @@ def index(path):
         except json.decoder.JSONDecodeError:
             return request_to_API.content, request_to_API.status_code,
     if request.method == 'POST':
-        p = requests.post("http://" + path, json=request.json)
+        p = requests.post("https://" + path, json=request.json)
         return p.json(), p.status_code
 
 
 def send_obd(path, data):
-    p = requests.post("http://" + path, json=data)
+    p = requests.post("https://" + path, json=data)
     if p.status_code != 200:
         pass
     else:
