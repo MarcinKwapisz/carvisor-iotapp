@@ -18,7 +18,7 @@ class Sender:
 
     def pack(self, value, name):
         if name == None:
-            name = 07
+            name = "07"
         name = str(name)
         try:
             # self.check_if_value_exist(name)
