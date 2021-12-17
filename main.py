@@ -16,14 +16,14 @@ class CarVisor:
         self.start_logging()
         self.gps = gps()
         self.BT = Bluetooth()
-        self.nfc = nfcModule()
+        # self.nfc = nfcModule()
         self.config = Config('config.ini', self.BT)
         if self.config.check_server_credentials():
             self.API = RequestAPI(self.config.section_returner('login'), self.gps)
             if self.API.check_authorization():
                 # everything is fine, IoT can send data to server
                 self.get_config_from_server()
-                print(self.nfc.get_tag())
+                # print(self.nfc.get_tag())
                 self.API.start_track("AAC")
                 # self.API.start_track(self.nfc.get_tag())
             else:
@@ -55,8 +55,8 @@ class CarVisor:
     def server_unreachable_handler(self):
         # changing API module to Saver for easy getting data
         logging.warning("Server unreachable, saving data locally")
-        self.API = Saver()
-        del self.saver
+        # self.API = Saver()
+        # del self.saver
 
     def get_config_from_server(self):
         config = self.API.get_config_from_server()
