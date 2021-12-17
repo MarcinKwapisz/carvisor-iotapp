@@ -29,9 +29,11 @@ class CarVisor:
             else:
                 # problem with authorization, sending to local storage
                 # self.server_unreachable_handler()
+                pass
         else:
             # no config to login to server
             # self.server_unreachable_handler()
+            pass
         self.send = Sender(self.config.return_send_interval(), self.API, self.gps)
         self.init_obd()
 
