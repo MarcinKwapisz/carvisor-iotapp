@@ -41,8 +41,10 @@ def send_obd(path, data):
     p = requests.Request("POST", "https://" + path, data=data)
     ready_request = sess.prepare_request(p)
     try:
+        print(data)
         req = sess.send(ready_request)
     except requests.exceptions.RequestException:
+        print("except")
         return failure_response
     return Response("{'a':'b'}", status=req.status_code, mimetype='application/json')
 

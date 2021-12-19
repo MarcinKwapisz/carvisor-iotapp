@@ -26,7 +26,9 @@ class gps:
     #     self.longitude = 42.00000
 
     def get_only_position_values(self):
+        print("gps start")
         self.gps()
+        print("gps end")
         return [self.longitude, self.latitude]
 
     def get_position(self):
