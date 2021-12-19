@@ -10,6 +10,7 @@ class gps:
         self.serial = Serial("/dev/ttyAMA4", baudrate=9600, timeout=0.2)
 
     def gps(self):
+        print("gps start")
         while True:
             try:
                 gps_serial_line = self.serial.readline().decode("UTF-8")
@@ -19,6 +20,7 @@ class gps:
                 gps_output = pynmea2.parse(gps_serial_line)
                 self.latitude = float("%.5f" % float(gps_output.latitude))
                 self.longitude = float("%.5f" % float(gps_output.longitude))
+                print("gps end")
                 return
 
     # def gps(self):
@@ -26,9 +28,7 @@ class gps:
     #     self.longitude = 42.00000
 
     def get_only_position_values(self):
-        print("gps start")
         self.gps()
-        print("gps end")
         return [self.longitude, self.latitude]
 
     def get_position(self):
