@@ -47,6 +47,7 @@ class RequestAPI:
 
 
     def send_obd_data(self, obd_data):
+        print("sending")
         response = self.POST("API/track/updateTrackData/",json.dumps(obd_data))
         if response.status_code == 200:
             logging.debug("Sending obd data finished")
