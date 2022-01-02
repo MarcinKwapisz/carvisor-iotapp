@@ -1,7 +1,7 @@
 from flask import Flask,request,jsonify, Response
 from threading import Thread
 import os
-# from savingModule import Saver
+from savingModule import Saver
 import json
 import requests
 
@@ -39,13 +39,15 @@ def index(path):
 
 def send_obd(path, data):
     p = requests.Request("POST", "https://" + path, data=data)
+    if save == 1:
+        savr.send_obd_data(p)
     ready_request = sess.prepare_request(p)
     try:
-        print(data)
         req = sess.send(ready_request)
     except requests.exceptions.RequestException:
-        print("except")
         return failure_response
+    if req.status_code != 200:
+        que.send_obd_data(p)
     return Response("{'a':'b'}", status=req.status_code, mimetype='application/json')
 
 
@@ -57,8 +59,10 @@ def create_own_response():
     return failure_response
 
 if __name__ == "__main__":
+    save = 1
     sess = requests.Session()
-    # savr = Saver()
+    savr = Saver(datetime.datetime.now().strftime("%s"))
+    que = Saver("queue")
     failure_response = create_own_response()
     app.run(host='0.0.0.0', port=5000, threaded=True)
 

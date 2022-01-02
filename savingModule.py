@@ -1,9 +1,9 @@
 from tinydb import TinyDB
-
+import datetime
 class Saver:
 
-    def __init__(self):
-        self.db = TinyDB('obd_data.json')
+    def __init__(self, stamp):
+        self.db = TinyDB(str(stamp)+'.json')
         self.amount_of_data = len(self.db)
 
     def send_obd_data(self, obd_data):
