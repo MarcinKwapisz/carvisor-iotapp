@@ -9,7 +9,7 @@ class Saver:
 
     def send_obd_data(self, obd_data):
         for i in json.loads(obd_data):
-            print(i)
+            print(obd_data[i])
         self.db.insert(obd_data)
 
     def get_all_data(self):
