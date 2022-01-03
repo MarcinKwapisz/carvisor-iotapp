@@ -4,6 +4,8 @@ import datetime
 class Saver:
 
     def __init__(self, stamp):
+        if stamp == 'queue':
+            open(stamp, 'w').close()
         self.db = TinyDB(str(stamp)+'.json')
         self.amount_of_data = len(self.db)
 

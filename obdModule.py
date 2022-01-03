@@ -31,7 +31,3 @@ class ObdReader:
         commands = self.connection.supported_commands
         for i in commands:
             print(i)
-
-conn = obd.OBD()
-print(conn.supported_commands)
-print(conn.query(obd.commands[1][12]).value)

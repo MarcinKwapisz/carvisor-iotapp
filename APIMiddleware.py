@@ -41,7 +41,6 @@ def index(path):
 def send_obd(path, data):
     p = requests.Request("POST", "https://" + path, data=data)
     if save == 1:
-        print(type(data))
         savr.send_obd_data(data)
     ready_request = sess.prepare_request(p)
     try:
