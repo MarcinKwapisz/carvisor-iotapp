@@ -41,14 +41,15 @@ def index(path):
 def send_obd(path, data):
     p = requests.Request("POST", "https://" + path, data=data)
     if save == 1:
-        savr.send_obd_data(p)
+        savr.send_obd_data(data)
     ready_request = sess.prepare_request(p)
     try:
         req = sess.send(ready_request)
     except requests.exceptions.RequestException:
         return failure_response
     if req.status_code != 200:
-        que.send_obd_data(p)
+        que.send_obd_data(data)
+    print(req.content)
     return Response("{'a':'b'}", status=req.status_code, mimetype='application/json')
 
 

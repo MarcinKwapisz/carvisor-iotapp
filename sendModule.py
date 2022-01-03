@@ -18,8 +18,7 @@ class Sender:
 
     def pack(self, value, name):
         if name == None:
-            name = "07"
-        name = str(name)
+            return
         try:
             # self.check_if_value_exist(name)
             self.data[self.timestamp]["obd"][name] = float("%.2f" % value.value.magnitude)
