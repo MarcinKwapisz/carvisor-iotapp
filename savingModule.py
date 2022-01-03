@@ -8,9 +8,10 @@ class Saver:
         self.amount_of_data = len(self.db)
 
     def send_obd_data(self, obd_data):
-        for i in json.loads(obd_data):
+        obd_data = json.loads(obd_data)
+        for i in obd_data:
             print(obd_data[i])
-        self.db.insert(obd_data)
+            self.db.insert(obd_data)
 
     def get_all_data(self):
         return self.db.table('_default').all()
