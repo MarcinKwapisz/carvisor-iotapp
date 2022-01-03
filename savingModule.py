@@ -1,4 +1,5 @@
 from tinydb import TinyDB
+import json
 import datetime
 class Saver:
 
@@ -7,7 +8,7 @@ class Saver:
         self.amount_of_data = len(self.db)
 
     def send_obd_data(self, obd_data):
-        for i in dict(obd_data):
+        for i in json.loads(obd_data):
             print(i)
         self.db.insert(obd_data)
 
