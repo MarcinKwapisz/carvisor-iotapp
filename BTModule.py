@@ -2,14 +2,14 @@ import logging
 import bluetooth
 import os
 import subprocess
-
+import os
 class Bluetooth:
 
     def __init__(self):
         pass
 
     def connect(self):
-        os.system("./BTStart.sh")
+        os.system(os.path.dirname(os.path.realpath(__file__))+"BTStart.sh")
         BT_name_output = subprocess.check_output("sudo hciconfig hci0 name | grep Name | cut -d' ' -f2",
                                                  shell=True).decode("UTF-8").rstrip("\n").replace("'", "")
         self.server_sock = bluetooth.BluetoothSocket(bluetooth.RFCOMM)
