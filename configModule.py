@@ -14,6 +14,7 @@ class Config:
         self.BT = bluetooth
         self.config_filename = config_filename
         self.parser = configparser.ConfigParser()
+        print(self.config_filename)
         if not os.path.exists(self.config_filename):
             self.create_new_config()
         else:

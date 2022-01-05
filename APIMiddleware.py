@@ -40,8 +40,6 @@ def index(path):
 
 def send_obd(path, data):
     p = requests.Request("POST", "https://" + path, data=data)
-    if save == 1:
-        savr.send_obd_data(data)
     ready_request = sess.prepare_request(p)
     try:
         req = sess.send(ready_request)
@@ -63,7 +61,6 @@ def create_own_response():
 if __name__ == "__main__":
     save = 1
     sess = requests.Session()
-    savr = Saver(datetime.datetime.now().strftime("%s"))
     que = Saver("queue")
     failure_response = create_own_response()
     app.run(host='0.0.0.0', port=5000, threaded=True)
