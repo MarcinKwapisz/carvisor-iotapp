@@ -13,9 +13,7 @@ class Config:
         # if file exist, read config
         self.BT = bluetooth
         self.config_filename = os.path.dirname(os.path.realpath(__file__))+"/"+config_filename
-        print(self.config_filename)
         self.parser = configparser.ConfigParser()
-        print(self.config_filename)
         if not os.path.exists(self.config_filename):
             self.create_new_config()
         else:

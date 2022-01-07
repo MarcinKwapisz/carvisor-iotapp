@@ -21,10 +21,6 @@ class gps:
                 self.longitude = float("%.5f" % float(gps_output.longitude))
                 return
 
-    # def gps(self):
-    #     self.latitude = 56.00000
-    #     self.longitude = 42.00000
-
     def get_only_position_values(self):
         self.gps()
         return [self.longitude, self.latitude]

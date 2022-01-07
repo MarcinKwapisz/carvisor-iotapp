@@ -2,7 +2,7 @@ import datetime
 import logging
 import requests
 import json
-
+from gpiozero import Button
 class RequestAPI:
 
     def __init__(self, login_data,gps):
@@ -56,7 +56,7 @@ class RequestAPI:
 
     def start_track(self,tag):
         gps_pos = self.gps.get_only_position_values()
-        start_data = json.dumps({ "nfc_tag":tag, "time": datetime.datetime.now().strftime("%s"),"private": False, "gps_longitude":gps_pos[0],"gps_latitude":gps_pos[1]})
+        start_data = json.dumps({ "nfc_tag":tag, "time": datetime.datetime.now().strftime("%s"), "private": Button(2).is_active(), "gps_longitude":gps_pos[0],"gps_latitude":gps_pos[1]})
         for i in range(self.connection_retries_number):
             response = self.POST("API/track/start",start_data)
             if response.status_code == 200:
