@@ -32,6 +32,7 @@ class Bluetooth:
         while True:
             try:
                 data = client_sock.recv(1024)
+                print(data)
             except bluetooth.btcommon.BluetoothError:
                 break
 
