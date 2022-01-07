@@ -40,7 +40,7 @@ class CarVisor:
     def start_logging(self):
         logging.basicConfig(filename='carvisor.log',
                             format='%(asctime)s %(levelname)-6s %(message)s',
-                            level=logging.WARNING,
+                            level=logging.DEBUG,
                             datefmt='%Y-%m-%d %H:%M:%S')
 
     def init_obd(self):
