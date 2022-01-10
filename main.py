@@ -16,16 +16,16 @@ class CarVisor:
         self.start_logging()
         self.gps = gps()
         self.BT = Bluetooth()
-        # self.nfc = nfcModule()
         self.config = Config('config.ini', self.BT)
         if self.config.check_server_credentials():
             self.API = RequestAPI(self.config.section_returner('login'), self.gps)
             if self.API.check_authorization():
                 # everything is fine, IoT can send data to server
                 self.get_config_from_server()
-                # print(self.nfc.get_tag())
-                self.API.start_track("AAC")
-                # self.API.start_track(self.nfc.get_tag())
+                print(nfcModule())
+                time.sleep(5)
+                # self.API.start_track("AAC")
+                self.API.start_track(nfcModule())
             else:
                 # problem with authorization, sending to local storage
                 # self.server_unreachable_handler()

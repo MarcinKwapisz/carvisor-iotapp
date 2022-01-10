@@ -36,7 +36,7 @@ class Sender:
         else:
             self.internal_counter += 1
 
-    def prepare_to_send(self):
+    def prepare_to_send(self, API):
         # clearing variables for next pack of data and sending collected data to API Module to send to server
         self.count_iteration = 0
         data_prep = self.data

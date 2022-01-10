@@ -1,10 +1,8 @@
 from flask import Flask,request,jsonify, Response
 from threading import Thread
-import os
 from savingModule import Saver
 import json
 import requests
-import datetime
 
 app = Flask(__name__)
 
@@ -47,8 +45,21 @@ def send_obd(path, data):
         return failure_response
     if req.status_code != 200:
         que.send_obd_data(data)
-    print(req.content)
+    else:
+        que.get_amount_of_data()
     return Response("{'a':'b'}", status=req.status_code, mimetype='application/json')
+
+def send_obd_saved(path, data):
+    p = requests.Request("POST", "https://" + path, data=data)
+    ready_request = sess.prepare_request(p)
+    try:
+        req = sess.send(ready_request)
+    except requests.exceptions.RequestException:
+        return failure_response
+    if req.status_code != 200:
+        return True
+    else:
+        return False
 
 
 def create_own_response():
