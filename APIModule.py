@@ -11,9 +11,9 @@ class RequestAPI:
         self.base_url = "http://localhost:5000/"+login_data['address']
         self.connection_retries_number = 3
         self.login_data = json.dumps({"licensePlate": login_data['licenseplate'], 'password': login_data['password']})
-        self.send_path(login_data['address'])
         self.create_own_response()
         self.session = requests.Session()
+        self.send_path(login_data['address'])
         self.start_session_car()
 
     def POST(self,url,data_to_send={}):
