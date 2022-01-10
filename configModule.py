@@ -26,8 +26,8 @@ class Config:
         self.parser['login'] = {'adress': '',
                                 'licenseplate': '',
                                 'password': ''}
-        self.parser['server'] = {'sendinterval': '',
-                                'locationinterval': ''}
+        self.parser['server'] = {'sendinterval': 15,
+                                'locationinterval': 15}
         self.parser['internal'] = {'save_locally': '0'}
         logging.info("Waiting for config from phone app")
         self.parser['login'] = json.loads(self.BT.connect())
