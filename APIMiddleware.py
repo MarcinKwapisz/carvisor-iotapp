@@ -13,7 +13,7 @@ def send(path):
         Thread(target=send_obd, args=(path+"/API/track/updateTrackData/", data)).start()
         return jsonify('Sended')
 
-@app.route('/setting/path', methods=['POST'])
+@app.route('/<path:path>/setting/path', methods=['POST'])
 def send_path(path):
     if request.method == 'POST':
         data = request.data.decode("utf-8")
