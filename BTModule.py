@@ -25,14 +25,16 @@ class Bluetooth:
                                     profiles=[bluetooth.SERIAL_PORT_PROFILE],
                                     protocols=[bluetooth.OBEX_UUID]
                                     )
-        logging.debug("Waiting for bluetooth connection on RFCOMM channel", self.port)
+        logging.debug("Waiting for bluetooth connection on RFCOMM channel"+ str(self.port))
 
         client_sock, client_info = self.server_sock.accept()
-        logging.debug("Accepted bluetooth connection from", client_info)
+        logging.debug("Accepted bluetooth connection from"+ str(client_info))
         while True:
             try:
                 data = client_sock.recv(1024)
                 print(data)
+                if data.decode("utf-8")[-1]=="}":
+                    break
             except bluetooth.btcommon.BluetoothError:
                 break
 

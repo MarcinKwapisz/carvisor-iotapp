@@ -22,6 +22,9 @@ class Saver:
         self.amount_of_data = len(self.db)
         return self.amount_of_data
 
+    def get_path(self, path):
+        self.path = path
+
     def send_payload(self):
         while self.get_amount_of_data() > 0:
             table = self.db.table('_default')
