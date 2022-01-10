@@ -9,7 +9,7 @@ class Saver:
             open(stamp+".json", 'w').close()
         self.db = TinyDB(str(stamp)+'.json')
         self.amount_of_data = len(self.db)
-        self.address = self.check_config_file()
+        self.path = ''
 
 
     def insert(self, base, data, counter=0):
