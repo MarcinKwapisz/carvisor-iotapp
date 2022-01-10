@@ -18,6 +18,7 @@ def send_path(path):
     if request.method == 'POST':
         data = request.data.decode("utf-8")
         que.get_path(data)
+        return jsonify('Sended')
 
 
 @app.route('/', defaults={'path': ''})
