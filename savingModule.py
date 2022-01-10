@@ -35,7 +35,7 @@ class Saver:
         return self.amount_of_data
 
     def get_path(self, path):
-        print(data)
+        print(path)
         self.path = path
 
     def send_payload(self,):
