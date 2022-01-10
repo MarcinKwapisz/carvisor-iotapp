@@ -12,11 +12,6 @@ class Saver:
         self.address = self.check_config_file()
 
 
-    def check_config_file(self):
-        while os.path.realpath(__file__))+"/config.ini" is False:
-            time.sleep(5)
-
-
     def insert(self, base, data, counter=0):
         if counter >= 3:
             return False
