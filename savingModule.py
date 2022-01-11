@@ -35,22 +35,16 @@ class Saver:
         return self.amount_of_data
 
     def get_path(self, path):
-        print(path)
         self.path = path
 
-    def send_payload(self,):
+    def send_payload(self):
         while self.get_amount_of_data() > 0:
             table = self.db.table('_default')
             entry = table.all()[0]
             table.remove(doc_ids=[entry.doc_id])
-            response = self.API.send_saved_data(dict(entry))
+            response = self.API.send_obd_saved(self.path, dict(entry))
             if response:
                 self.insert(self.db, entry)
-            else:
-                pass
-
-    def get_API(self,API):
-        self.API = API
 
     def remove_entry(self,doc_id):
         table = self.db.table('_default')

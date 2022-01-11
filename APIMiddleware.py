@@ -57,7 +57,7 @@ def send_obd(path, data):
     return Response("{'a':'b'}", status=req.status_code, mimetype='application/json')
 
 def send_obd_saved(path, data):
-    p = requests.Request("POST", "https://" + path, data=data)
+    p = requests.Request("POST", "https://" + path + "API/track/updateTrackData/", data=data)
     ready_request = sess.prepare_request(p)
     try:
         req = sess.send(ready_request)
