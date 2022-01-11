@@ -40,6 +40,7 @@ def index(path):
             req = sess.send(ready_request)
         except requests.exceptions.RequestException:
             return failure_response
+        print(req.content)
         return Response("{'a':'b'}", status=req.status_code, mimetype='application/json')
 
 
