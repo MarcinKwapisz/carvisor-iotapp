@@ -33,7 +33,8 @@ class RequestAPI:
         return request
 
     def send_path(self, address):
-        self.POST("setting/path",json.dumps(address))
+        print(self.POST("setting/path",json.dumps(address)).content)
+
 
     def start_session_car(self):
         # starting new session with server
