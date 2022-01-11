@@ -31,7 +31,7 @@ def index(path):
         except requests.exceptions.RequestException:
             return failure_response.content, failure_response.status_code
         except json.decoder.JSONDecodeError:
-            return request_to_API.status_code,
+            return Response("{'a':'b'}", 500, mimetype='application/json')
     if request.method == 'POST':
         data = request.data.decode("utf-8")
         p = requests.Request("POST", "https://" + path, data=data)
@@ -40,8 +40,10 @@ def index(path):
             req = sess.send(ready_request)
         except requests.exceptions.RequestException:
             return failure_response
-        print(req.content)
-        return Response("{'a':'b'}", status=req.status_code, mimetype='application/json')
+        if req.status_code != 200:
+            return failure_response
+        else:
+            return Response("{'a':'b'}", status=req.status_code, mimetype='application/json')
 
 
 def send_obd(path, data):
