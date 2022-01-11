@@ -1,4 +1,10 @@
 # CarVisor Moduł IoT
+## Autor: Marcin Kwapisz
+
+### Aplikacja jest podzielona na dwie aplikacje które są uruchamiane przy starcie systemu
+### APIMiddleware i savingModule są uruchamiane razem i działają jako pośrednik między główną aplikacją i serwerem, obsługują także zapis danych w przypadku niepowodzenia w przesyle na serwer
+
+### main jest główną aplikacją która obsługuje wszystkie pozostałe funkcjonalności i pracuje bezpośrednio z pojazdem oraz dołączonymi fizycznymi modułami
 
 ## Moduły:
 
@@ -8,7 +14,7 @@
     Moduł ten zarządza komunikacją z serwerem oraz odbiera i przesyła dane
     na/z serwera. 
 #### - APIMiddleware
-    Moduł współpracujący głównym programem, działa jako pośrednik pomiędzy nim a serwerem
+    Moduł współpracujący z głównym programem, działa jako pośrednik pomiędzy nim a serwerem
 #### - BT
     Moduł do inicjalizacji połączenia z aplikacją mobilną po BT w celu odebrania pierwszej konfiguracji
 #### - Config
