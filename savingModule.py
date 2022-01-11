@@ -1,7 +1,5 @@
 from tinydb import TinyDB
 import json
-import datetime
-import time
 class Saver:
 
     def __init__(self, stamp):
@@ -13,7 +11,7 @@ class Saver:
 
 
     def insert(self, base, data, counter=0):
-        if counter >= 3:
+        if counter >= 5:
             return False
         try:
             self.db.insert(data)

@@ -25,12 +25,9 @@ class CarVisor:
                 self.API.start_track("AAC")
                 # self.API.start_track(nfcModule.get_tag())
             else:
-                # problem with authorization, sending to local storage
-                # self.server_unreachable_handler()
                 pass
         else:
-            # no config to login to server
-            # self.server_unreachable_handler()
+
             pass
         self.send = Sender(self.config.return_send_interval(), self.API, self.gps)
         self.init_obd()
@@ -51,12 +48,6 @@ class CarVisor:
     def start_obd_reading(self):
         self.obd.start_read()
         input("Rozpoczęto odczyt OBD.\n")
-
-    def server_unreachable_handler(self):
-        # changing API module to Saver for easy getting data
-        logging.warning("Server unreachable, saving data locally")
-        # self.API = Saver()
-        # del self.saver
 
     def get_config_from_server(self):
         config = self.API.get_config_from_server()

@@ -52,13 +52,5 @@ class Config:
         self.parser['server'] = config
         self.parser.write(open(self.config_filename, 'w'))
 
-    def get_config_from_local(self):
-        if all([ values == '' for values in self.parser['server'].values()]):
-            logging.warning('No local configuration saved')
-            return False
-        else:
-            logging.debug('Configuration from local available')
-            return True
-
     def return_send_interval(self):
         return self.parser['server']['sendinterval']

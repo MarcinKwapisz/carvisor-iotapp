@@ -1,13 +1,10 @@
-import json
 import datetime
-import re
 
 
 class Sender:
 
     def __init__(self, sendinterval, API,gps):
         self.count_iteration = 0
-        # self.max_iterations = 3
         self.values = 3
         self.internal_counter = 0
         self.max_iterations = int(sendinterval)
@@ -17,13 +14,12 @@ class Sender:
         self.new_iteration()
 
     def pack(self, value, name):
+        # pack incoming data to packages
         if name == None:
             return
         try:
-            # self.check_if_value_exist(name)
             self.data[self.timestamp]["obd"][name] = float("%.2f" % value.value.magnitude)
         except AttributeError:
-            # self.check_if_value_exist(name)
             self.data[self.timestamp]["obd"][name] = 0
         if self.internal_counter >= self.values - 1:
             self.data[self.timestamp]["gps_pos"] = self.gps.get_position()
@@ -36,7 +32,7 @@ class Sender:
         else:
             self.internal_counter += 1
 
-    def prepare_to_send(self, API):
+    def prepare_to_send(self):
         # clearing variables for next pack of data and sending collected data to API Module to send to server
         self.count_iteration = 0
         data_prep = self.data
