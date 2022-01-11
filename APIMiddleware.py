@@ -34,6 +34,7 @@ def index(path):
             return Response("{'a':'b'}", 500, mimetype='application/json')
     if request.method == 'POST':
         data = request.data.decode("utf-8")
+        print(data)
         p = requests.Request("POST", "https://" + path, data=data)
         ready_request = sess.prepare_request(p)
         try:
