@@ -41,12 +41,9 @@ def index(path):
         ready_request = sess.prepare_request(p)
         try:
             req = sess.send(ready_request)
-            print(req.content)
-            print(req.status_code)
         except requests.exceptions.RequestException:
             return failure_response.content, failure_response.status_code
         if req.status_code != 200:
-            print("hello")
             return Response("{'a':'b'}", status=req.status_code)
         else:
             return "{'a':'b'}", req.status_code
