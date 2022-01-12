@@ -17,9 +17,15 @@ class gps:
                 gps_serial_line = self.serial.readline()
             if gps_serial_line[0:6] == '$GPRMC':
                 gps_output = pynmea2.parse(gps_serial_line)
-                self.latitude = float("%.5f" % float(gps_output.latitude))
-                self.longitude = float("%.5f" % float(gps_output.longitude))
-                return
+                if float("%.5f" % float(gps_output.longitude)) == 0.0:
+                    pass
+                elif float("%.5f" % float(gps_output.longitude)) == 0.0:
+                    self.latitude = float("%.5f" % float(gps_output.latitude))
+                    self.longitude = float("%.5f" % float(gps_output.longitude))
+                if self.longitude == None:
+                    pass
+                else:
+                    return
 
     def get_only_position_values(self):
         self.gps()
