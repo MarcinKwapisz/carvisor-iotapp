@@ -46,6 +46,7 @@ def index(path):
         if req.status_code != 200:
             return failure_response.content, failure_response.status_code
         else:
+            print("test")
             return "{'a':'b'}", req.status_code
 
 
