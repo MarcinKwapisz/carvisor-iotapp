@@ -22,8 +22,8 @@ class CarVisor:
             if self.API.check_authorization():
                 # everything is fine, IoT can send data to server
                 self.get_config_from_server()
-                self.API.start_track("AAC")
-                # self.API.start_track(nfcModule.get_tag())
+                # self.API.start_track("AAC")
+                self.API.start_track(nfcModule.get_tag())
             else:
                 pass
         else:

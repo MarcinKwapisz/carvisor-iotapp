@@ -60,6 +60,7 @@ class RequestAPI:
             logging.warning("Problem occurred when sending obd data to server, error code: " + str(response.status_code))
 
     def start_track(self,tag):
+        print(tag)
         gps_pos = self.gps.get_only_position_values()
         start_data = json.dumps({ "nfc_tag":tag, "time": datetime.datetime.now().strftime("%s"), "private": Button(2).is_active, "gps_longitude":gps_pos[0],"gps_latitude":gps_pos[1]})
         for i in range(self.connection_retries_number):
