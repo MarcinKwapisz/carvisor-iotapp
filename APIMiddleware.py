@@ -47,7 +47,7 @@ def index(path):
             return failure_response.content, failure_response.status_code
         if req.status_code != 200:
             print("hello")
-            rResponse("{'a':'b'}", status=req.status_code, mimetype='application/json')
+            Response("{'a':'b'}", status=req.status_code, mimetype='application/json')
         else:
             return "{'a':'b'}", req.status_code
 
