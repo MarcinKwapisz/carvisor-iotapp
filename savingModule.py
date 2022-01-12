@@ -22,7 +22,6 @@ class Saver:
     def send_obd_data(self, obd_data):
         obd_data = json.loads(obd_data)
         for i in obd_data:
-            print(obd_data[i])
             self.insert(self.db, obd_data)
 
     def get_all_data(self):
