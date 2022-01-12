@@ -33,7 +33,7 @@ class RequestAPI:
         return request
 
     def send_path(self, address):
-        print(self.POST("setting/path",json.dumps(address)).content)
+        self.POST("setting/path", json.dumps(address))
         pass
 
 
@@ -52,7 +52,6 @@ class RequestAPI:
 
 
     def send_obd_data(self, obd_data):
-        print("sending")
         response = self.POST("API/track/updateTrackData/",json.dumps(obd_data))
         if response.status_code == 200:
             logging.debug("Sending obd data finished")
@@ -60,7 +59,6 @@ class RequestAPI:
             logging.warning("Problem occurred when sending obd data to server, error code: " + str(response.status_code))
 
     def start_track(self,tag):
-        print(tag)
         gps_pos = self.gps.get_only_position_values()
         start_data = json.dumps({ "nfc_tag":tag, "time": datetime.datetime.now().strftime("%s"), "private": Button(2).is_active, "gps_longitude":gps_pos[0],"gps_latitude":gps_pos[1]})
         for i in range(self.connection_retries_number):

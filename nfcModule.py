@@ -10,7 +10,6 @@ def get_tag():
             pass
         else:
             tag = nfc.tag.activate(clf, target)
-            print(str(tag).split("ID="))
             clf.close()
             return str(tag).split("ID=")[1]
 
