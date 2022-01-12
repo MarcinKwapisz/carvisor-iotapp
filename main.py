@@ -47,7 +47,9 @@ class CarVisor:
 
     def start_obd_reading(self):
         self.obd.start_read()
-        input("Rozpoczęto odczyt OBD.\n")
+        print("Rozpoczęto odczyt OBD.\n")
+        while 1:
+            time.sleep(60)
 
     def get_config_from_server(self):
         config = self.API.get_config_from_server()

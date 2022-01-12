@@ -42,11 +42,11 @@ def index(path):
         try:
             req = sess.send(ready_request)
         except requests.exceptions.RequestException:
-            return failure_response
+            return failure_response.content, failure_response.status_code
         if req.status_code != 200:
-            return failure_response
+            return failure_response.content, failure_response.status_code
         else:
-            return Response("{'a':'b'}", status=req.status_code, mimetype='application/json')
+            return "{'a':'b'}", req.status_code
 
 
 def send_obd(path, data):
