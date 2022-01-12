@@ -22,6 +22,7 @@ class gps:
                 else:
                     self.latitude = float("%.5f" % float(gps_output.latitude))
                     self.longitude = float("%.5f" % float(gps_output.longitude))
+                    return
                 if self.longitude == None:
                     pass
                 else:
