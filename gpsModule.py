@@ -19,7 +19,7 @@ class gps:
                 gps_output = pynmea2.parse(gps_serial_line)
                 if float("%.5f" % float(gps_output.longitude)) == 0.0:
                     pass
-                elif float("%.5f" % float(gps_output.longitude)) == 0.0:
+                else:
                     self.latitude = float("%.5f" % float(gps_output.latitude))
                     self.longitude = float("%.5f" % float(gps_output.longitude))
                 if self.longitude == None:
