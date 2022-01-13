@@ -5,9 +5,9 @@ from time import sleep
 
 def get_tag():
     buzzer = TonalBuzzer(17)
+    buzzer.play(220)
     clf = nfc.ContactlessFrontend('tty:AMA2:pn532')
     target = None
-    buzzer.play(220)
     while target is None:
         target = clf.sense(nfc.clf.RemoteTarget('106A'), nfc.clf.RemoteTarget('106B'),
                                 nfc.clf.RemoteTarget('212F'))
