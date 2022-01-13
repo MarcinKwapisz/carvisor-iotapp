@@ -5,12 +5,12 @@ import pynmea2
 class gps:
 
     def __init__(self):
-        self.longitude = 52.2742
-        self.latitude = 16.5542
+        self.longitude = 16.5542
+        self.latitude = 52.2742
         self.serial = Serial("/dev/ttyAMA4", baudrate=9600, timeout=0.2)
 
     def gps(self):
-        self.longitude = float("%.5f" % float(self.longitude-0.0020))
+        self.longitude = float("%.5f" % float(self.longitude-0.0002))
         # while True:
         #     try:
         #         gps_serial_line = self.serial.readline().decode("UTF-8")
