@@ -10,7 +10,7 @@ class gps:
         self.serial = Serial("/dev/ttyAMA4", baudrate=9600, timeout=0.2)
 
     def gps(self):
-        pass
+        self.longitude = float("%.5f" % float(gps_output.longitude-0.0020))
         # while True:
         #     try:
         #         gps_serial_line = self.serial.readline().decode("UTF-8")
