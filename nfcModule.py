@@ -11,10 +11,10 @@ def get_tag():
     while target is None:
         target = clf.sense(nfc.clf.RemoteTarget('106A'), nfc.clf.RemoteTarget('106B'),
                                 nfc.clf.RemoteTarget('212F'))
-        buzzer.stop()
         if target is None:
             pass
         else:
+            buzzer.stop()
             tag = nfc.tag.activate(clf, target)
             clf.close()
             return str(tag).split("ID=")[1]
