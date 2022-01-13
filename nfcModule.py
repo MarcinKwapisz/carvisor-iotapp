@@ -1,18 +1,17 @@
 import nfc
 from time import sleep
-from gpiozero import Buzzer
+from gpiozero import TonalBuzzer
 from time import sleep
 
 def get_tag():
-    buzzer = Buzzer(17)
+    buzzer = TonalBuzzer(17)
     clf = nfc.ContactlessFrontend('tty:AMA2:pn532')
     target = None
+    buzzer.play(220)
     while target is None:
-        buzzer.on()
-        sleep(0.2)
         target = clf.sense(nfc.clf.RemoteTarget('106A'), nfc.clf.RemoteTarget('106B'),
                                 nfc.clf.RemoteTarget('212F'))
-        buzzer.off()
+        buzzer.stop()
         if target is None:
             pass
         else:
