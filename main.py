@@ -27,7 +27,6 @@ class CarVisor:
             else:
                 pass
         else:
-
             pass
         self.send = Sender(self.config.return_send_interval(), self.API, self.gps)
         self.init_obd()
