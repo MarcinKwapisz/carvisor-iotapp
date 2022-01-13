@@ -1,6 +1,10 @@
 import nfc
 from time import sleep
-def get_tag(buzzer):
+from gpiozero import Buzzer
+from time import sleep
+
+def get_tag():
+    buzzer = Buzzer(17)
     clf = nfc.ContactlessFrontend('tty:AMA2:pn532')
     target = None
     while target is None:
