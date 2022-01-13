@@ -1,6 +1,6 @@
 from serial import Serial
 import pynmea2
-
+from time import sleep
 
 class gps:
 
@@ -24,6 +24,7 @@ class gps:
                     pass
                 else:
                     self.buzzer.on()
+                    sleep(0.5)
                     self.latitude = float("%.5f" % float(gps_output.latitude))
                     self.longitude = float("%.5f" % float(gps_output.longitude))
                     self.buzzer.off()
