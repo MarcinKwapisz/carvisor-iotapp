@@ -8,13 +8,16 @@ from APIModule import RequestAPI
 from gpsModule import gps
 from BTModule import Bluetooth
 import nfcModule
+from gpiozero import Buzzer
+from time import sleep
 
 
 class CarVisor:
 
     def __init__(self):
+        self.buzzer = Buzzer(17)
         self.start_logging()
-        self.gps = gps()
+        self.gps = gps(self.buzzer)
         self.BT = Bluetooth()
         self.config = Config('config.ini', self.BT)
         if self.config.check_server_credentials():
@@ -23,7 +26,7 @@ class CarVisor:
                 # everything is fine, IoT can send data to server
                 self.get_config_from_server()
                 # self.API.start_track("AAC")
-                self.API.start_track(nfcModule.get_tag())
+                self.API.start_track(nfcModule.get_tag(self.buzzer))
             else:
                 pass
         else:

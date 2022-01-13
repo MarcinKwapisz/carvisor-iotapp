@@ -4,11 +4,12 @@ import pynmea2
 
 class gps:
 
-    def __init__(self):
+    def __init__(self,buzzer):
         # self.longitude = 16.5542
         # self.latitude = 52.2742
         self.longitude = None
         self.latitude = None
+        self.buzzer = buzzer
         self.serial = Serial("/dev/ttyAMA4", baudrate=9600, timeout=0.2)
     def gps(self):
         # self.longitude = float("%.5f" % float(self.longitude-0.0002))
@@ -22,8 +23,10 @@ class gps:
                 if float("%.5f" % float(gps_output.longitude)) == 0.0:
                     pass
                 else:
+                    self.buzzer.on()
                     self.latitude = float("%.5f" % float(gps_output.latitude))
                     self.longitude = float("%.5f" % float(gps_output.longitude))
+                    self.buzzer.off()
                     return
                 if self.longitude == None:
                     pass
