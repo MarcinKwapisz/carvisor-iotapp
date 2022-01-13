@@ -16,9 +16,9 @@ class CarVisor:
     def __init__(self):
         self.start_logging()
         self.gps = gps()
-        self.gps.gps()
         self.BT = Bluetooth()
         self.config = Config('config.ini', self.BT)
+        self.gps.gps()
         if self.config.check_server_credentials():
             self.API = RequestAPI(self.config.section_returner('login'), self.gps)
             if self.API.check_authorization():
