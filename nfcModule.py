@@ -1,5 +1,5 @@
 import nfc
-
+from time import sleep
 def get_tag(buzzer):
     clf = nfc.ContactlessFrontend('tty:AMA2:pn532')
     target = None
