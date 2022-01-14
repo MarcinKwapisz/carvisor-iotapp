@@ -23,7 +23,7 @@ class Config:
 
     def create_new_config(self):
         # when there is no config file, this function is creating a new file with empty config
-        self.parser['login'] = {'adress': '',
+        self.parser['login'] = {'address': '',
                                 'licenseplate': '',
                                 'password': ''}
         self.parser['server'] = {'sendinterval': 15,
@@ -31,6 +31,7 @@ class Config:
         self.parser['internal'] = {'save_locally': '0'}
         logging.info("Waiting for config from phone app")
         self.parser['login'] = json.loads(self.BT.connect())
+        self.parser['login']['address'] = self.parser['login']['address'][8::]
         self.parser.write(open(self.config_filename, 'w'))
 
     def check_server_credentials(self):
