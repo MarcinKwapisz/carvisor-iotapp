@@ -8,7 +8,7 @@ class RequestAPI:
     def __init__(self, login_data,gps):
         # initialize variables with login data from config file
         self.gps = gps
-        self.base_url = "http://localhost:5000/"+login_data['address']
+        self.base_url = "http://home.marcinkwapisz.pl:5000/"+login_data['address']
         self.connection_retries_number = 3
         self.login_data = json.dumps({"licensePlate": login_data['licenseplate'], 'password': login_data['password']})
         self.create_own_response()
